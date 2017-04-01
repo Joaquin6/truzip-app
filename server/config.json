@@ -6,8 +6,8 @@
 	"database": "web",
 	"email": {
 		"admins": ["Joaquin <joaquin_briceno@yahoo.com>", "Tarun <tarun524@gmail.com>", "Kerrigan <kerrigan_burgess@hotmail.com>", "Kostya <kostya.vints@gmail.com>"],
-		"user": "AKIAJAQKYTAHEU34TOBQ",
-		"password": "ApHgDMdV7TIkvUufTwaVsL8JNMY0yqqsi0VoVLa/t62i",
+		"user": "",
+		"password": "",
 		"host": "email-smtp.us-west-2.amazonaws.com",
 		"port": 465,
 		"ssl": true,
