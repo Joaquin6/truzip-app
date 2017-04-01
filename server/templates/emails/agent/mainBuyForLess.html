@@ -1,0 +1,27 @@
+{{ mainHeader }}
+<div {{ inline_mainBody }}>
+	{[ if (newUser) { ]}
+    	<h1 {{ inline_h1 }}>You Have A New Lead!</h1>
+    {[ } else { ]}
+    	<h1 {{ inline_h1 }}>Your Lead Updates</h1>
+    {[ } ]}
+    <h3 {{ inline_h3 }}>Hi, {{ agentName }}</h3>
+    <h3 {{ inline_h3 }}>Below are your lead details</h3>
+    {[ if (newUser) { ]}
+    	<h4 {{ inline_h4 }}>In addition, the user is very interested in buying a property with Truzip</h4>
+    {[ } ]}
+    <h4 {{ inline_h4 }}>Email address of your lead: <a href="mailto:{{ email }}">{{ email }}</a>.</h4>
+    {[ if (multiSelect) { ]}
+        <h4 {{ inline_h4 }}>Search Areas: {{ city }}.</h4>
+    {[ } else { ]}
+        <h4 {{ inline_h4 }}>Search Area: {{ city }}.</h4>
+    {[ } ]}
+    <h3 {{ inline_h3 }}>Message From Consumer</h3>
+    <h4 {{ inline_h4 }}>{{ message }}</h4>
+    <h4 {{ inline_h4 }}>The consumer is very interested in buying a property with Truzip.</h4>
+    <h3 {{ inline_h3 }}>We suggest you respond as soon as possible</h3>
+    <h4 {{ inline_h4 }}>Mention you are a Truzip premier agent. Provide a hook as to how you differentiate amongst other agents.</h4>
+    <h4 {{ inline_h4 }}>Immediate responses are 500% more effective.</h4>
+    <h4 {{ inline_h4 }}>We will continue to send you emails as the consumer interacts further.</h4>
+    {{ mainFooter }}
+</div>

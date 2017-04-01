@@ -1,0 +1,286 @@
+{
+	"environment": "prod",
+	"username": "webuser",
+	"password": "truzip",
+	"port": "27017",
+	"database": "web",
+	"email": {
+		"admins": ["Joaquin <joaquin_briceno@yahoo.com>", "Tarun <tarun524@gmail.com>", "Kerrigan <kerrigan_burgess@hotmail.com>", "Kostya <kostya.vints@gmail.com>"],
+		"user": "AKIAJAQKYTAHEU34TOBQ",
+		"password": "ApHgDMdV7TIkvUufTwaVsL8JNMY0yqqsi0VoVLa/t62i",
+		"host": "email-smtp.us-west-2.amazonaws.com",
+		"port": 465,
+		"ssl": true,
+		"notifications": {
+			"imagePath": "https://www.truzip.com/images/",
+			"logo": {
+				"image": "logoText.png",
+				"alternate": "Truzip.com"
+			},
+			"images": {
+				"externalAlternate": "Truzip.com - Property Images"
+			},
+			"agent": {
+				"slogan": "We Find You Leads in every Zipcode"
+			},
+			"user": {
+				"slogan": "We Find You Deals in every Zipcode"
+			}
+		}
+	},
+	"dev": {
+		"host": "ec2-54-153-47-255.us-west-1.compute.amazonaws.com",
+		"memcached": "127.0.0.1:11211"
+	},
+	"prod": {
+		"host": "ec2-54-153-47-255.us-west-1.compute.amazonaws.com",
+		"memcached": "truzipmemcached.2ztol7.cfg.usw1.cache.amazonaws.com:11211"
+	},
+	"deals": [
+		{
+			"cities": [
+				{
+					"name": "san diego",
+					"min": "400000",
+					"max": "800000"
+				}, {
+					"name": "los angeles",
+					"min": "500000",
+					"max": "1000000"
+				}, {
+					"name": "irvine",
+					"min": "700000",
+					"max": "1000000"
+				}, {
+					"name": "fresno",
+					"min": "250000",
+					"max": "600000"
+				}, {
+					"name": "san francisco",
+					"min": "1000000",
+					"max": "3000000"
+				}, {
+					"name": "long beach",
+					"min": "600000",
+					"max": "900000"
+				}, {
+					"name": "san jose",
+					"min": "700000",
+					"max": "1200000"
+				}, {
+					"name": "sacramento",
+					"min": "200000",
+					"max": "500000"
+				}, {
+					"name": "santa ana",
+					"min": "300000",
+					"max": "600000"
+				}, {
+					"name": "newport coast",
+					"min": "1000000",
+					"max": "2500000"
+				}, {
+					"name": "beverly hills",
+					"min": "1500000",
+					"max": "3000000"
+				}
+			]
+		}, {
+			"cities": [
+				{
+					"name": "la jolla",
+					"min": "600000",
+					"max": "2100000"
+				}, {
+					"name": "los angeles",
+					"min": "1000000",
+					"max": "3000000"
+				}, {
+					"name": "palmdale",
+					"min": "400000",
+					"max": "900000"
+				}, {
+					"name": "corona",
+					"min": "300000",
+					"max": "700000"
+				}, {
+					"name": "torrance",
+					"min": "500000",
+					"max": "1100000"
+				}, {
+					"name": "escondido",
+					"min": "300000",
+					"max": "800000"
+				}, {
+					"name": "sunnyvale",
+					"min": "500000",
+					"max": "1100000"
+				}, {
+					"name": "pasadena",
+					"min": "500000",
+					"max": "1000000"
+				}, {
+					"name": "thousand oaks",
+					"min": "500000",
+					"max": "900000"
+				}, {
+					"name": "concord",
+					"min": "300000",
+					"max": "800000"
+				}, {
+					"name": "santa clara",
+					"min": "500000",
+					"max": "1000000"
+				}
+			]
+		}, {
+			"cities": [
+				{
+					"name": "oakland",
+					"min": "500000",
+					"max": "1100000"
+				}, {
+					"name": "bakersfield",
+					"min": "300000",
+					"max": "700000"
+				}, {
+					"name": "anaheim",
+					"min": "600000",
+					"max": "1200000"
+				}, {
+					"name": "oceanside",
+					"min": "500000",
+					"max": "1200000"
+				}, {
+					"name": "riverside",
+					"min": "400000",
+					"max": "800000"
+				}, {
+					"name": "stockton",
+					"min": "300000",
+					"max": "800000"
+				}, {
+					"name": "chula vista",
+					"min": "300000",
+					"max": "700000"
+				}, {
+					"name": "fremont",
+					"min": "600000",
+					"max": "1200000"
+				}, {
+					"name": "san francisco",
+					"min": "500000",
+					"max": "1000000"
+				}, {
+					"name": "san bernardino",
+					"min": "400000",
+					"max": "700000"
+				}, {
+					"name": "modesto",
+					"min": "600000",
+					"max": "1000000"
+				}
+			]
+		}, {
+			"cities": [
+				{
+					"name": "glendale",
+					"min": "500000",
+					"max": "1100000"
+				}, {
+					"name": "huntington beach",
+					"min": "300000",
+					"max": "900000"
+				}, {
+					"name": "garden grove",
+					"min": "400000",
+					"max": "800000"
+				}, {
+					"name": "corona",
+					"min": "500000",
+					"max": "1200000"
+				}, {
+					"name": "palmdale",
+					"min": "400000",
+					"max": "800000"
+				}, {
+					"name": "carlsbad",
+					"min": "300000",
+					"max": "900000"
+				}, {
+					"name": "mission viejo",
+					"min": "500000",
+					"max": "900000"
+				}, {
+					"name": "santa monica",
+					"min": "600000",
+					"max": "1700000"
+				}, {
+					"name": "newport beach",
+					"min": "500000",
+					"max": "2000000"
+				}, {
+					"name": "buena park",
+					"min": "400000",
+					"max": "700000"
+				}, {
+					"name": "napa",
+					"min": "600000",
+					"max": "3000000"
+				}
+			]
+		}
+	],
+	"options": {
+		"company_name": "Truzip",
+		"total_plans": 20,
+		"charges": {
+			"per_lead": 1900
+		},
+		"errorMessages": {
+			"unhandledWebhook": "UNHANDLED WEBHOOK: %s - We currently do not handle logic for this webhook event. To avoid this error, disable this event in Stripe > Account Settings > Webhooks.",
+			"findingInvoice": "WEBHOOK ERROR: Cannot find Subscription and/or Invoice with the given Subscription ID: %s and Invoice ID: %s."
+		},
+		"defaultPlan": "bronze",
+		"plans": ["bronze", "silver", "gold", "platinum"],
+		"planData": {
+			"free": {
+				"name": "Bronze",
+				"price": 5
+			},
+			"silver": {
+				"name": "Silver",
+				"price": 10
+			},
+			"gold": {
+				"name": "Gold",
+				"price": 20
+			},
+			"platinum": {
+				"name": "Platinum",
+				"price": 40
+			}
+		}
+	},
+	"stripe": {
+		"test": {
+			"keys": {
+				"secret_key": "sk_test_5pTXeGNf3i48riYIbXnmW97k",
+				"publishable_key": "pk_test_YJWkhi2Z9OWSlekj1skNYXNQ"
+			},
+			"subscription": {
+				"plan_name": "truzip-subscription"
+			}
+		},
+		"live": {
+			"keys": {
+				"secret_key": "sk_live_vlzDWjnZ9ObdDHdpHVawPpUJ",
+				"publishable_key": "pk_live_iPEj5LeoqRXUl5I2y4EtKafj"
+			},
+			"subscription": {
+				"plan_name": "truzip-subscription"
+			}
+		},
+		"mode": "live"
+	}
+}

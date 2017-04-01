@@ -1,0 +1,30 @@
+{{ mainHeader }}
+<div {{ inline_mainBody }}>
+	{[ if (newUser) { ]}
+    	<h1 {{ inline_h1 }}>You Have A New Lead!</h1>
+    {[ } else { ]}
+    	<h1 {{ inline_h1 }}>Your Lead Updates</h1>
+    {[ } ]}
+    <h3 {{ inline_h3 }}>Hi, {{ agentName }}</h3>
+    <h3 {{ inline_h3 }}>Below are your lead details</h3>
+    {[ if (newUser) { ]}
+    	<h4 {{ inline_h4 }}>In addition, the user is very interested in selling a property with Truzip</h4>
+    {[ } ]}
+    <h4 {{ inline_h4 }}>Email address of your lead: <a href="mailto:{{ email }}">{{ email }}</a>.</h4>
+    {[ if (multiSelect) { ]}
+        <h4 {{ inline_h4 }}>Search Areas: {{ city }}.</h4>
+    {[ } else { ]}
+        <h4 {{ inline_h4 }}>Search Area: {{ city }}.</h4>
+    {[ } ]}
+    <h3 {{ inline_h3 }}>Message From Consumer</h3>
+    <h4 {{ inline_h4 }}>{{ message }}</h4>
+    <h4 {{ inline_h4 }}>The user is very interested in selling a property with Truzip. We suggest emailing the user and introducing yourself. Provide some "hooks" into why (s)he should sell with you as opposed to other agents.</h4>
+    <h3 {{ inline_h3 }}>Text which caused the consumer to give us thier email</h3>
+    <h4 {{ inline_h4 }}>Keep more of your equity. We partner with top local agents from brokerages like Remax, Coldwell, First Team, etc. to sell your home for 1% (as opposed to 2.5%). Agents are incentivized to sell your home for more than comparables.</h4>
+    <h4 {{ inline_h4 }}>We ensure your home is prominently displayed on all major sites like zillow, realtor, redfin, etc. with professional photos to attract the most buyers.</h4>
+    <h3 {{ inline_h3 }}>It would be good to reaffirm the above in your response</h3>
+    <h4 {{ inline_h4 }}>Mention you are a Truzip premier agent. Provide a hook as to how you differentiate amongst other agents.</h4>
+    <h4 {{ inline_h4 }}>Immediate responses are 500% more effective.</h4>
+    <h4 {{ inline_h4 }}>We will continue to send you emails as the consumer interacts further.</h4>
+    {{ mainFooter }}
+</div>

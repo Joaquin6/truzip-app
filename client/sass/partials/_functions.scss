@@ -1,0 +1,10 @@
+// ====================================================================
+// Any non-Compass functions used in the project
+// ====================================================================
+
+// Function for calculating PX to EM
+// ====================================================================
+
+@function calc-em($px, $base: $base-font-size) {
+    @return ($px / $base) * 1em;
+}

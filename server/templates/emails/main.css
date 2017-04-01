@@ -1,0 +1,160 @@
+.mainHeader {
+	margin: 0 auto;
+	padding: 2px;
+	background: #222;
+	text-align: center;
+}
+.mainLogo {
+	margin: 5px;
+	width: 150px;
+	height: 40px;
+}
+.mainBody {
+	padding: 20px;
+}
+.mainImage {
+	background: url(https://www.truzip.com/images/homePageEmailSize.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	height: 200px;
+	overflow-x: hidden;
+	position: relative;
+	margin-top: 20px;
+}
+h1 {
+	color: #038be1;
+	font-size: 24px;
+	font-weight: normal;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+}
+h2 {
+	text-align: center;
+	margin-bottom: 5px;
+	color: #000;
+	font-size: 16px;
+	font-weight: normal;
+}
+h3 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	color: #038be1;
+	font-size: 18px;
+	font-weight: normal;
+}
+h4 {
+	margin-bottom: 10px;
+	color: #000;
+	font-weight: normal;
+	font-size: 14px;
+}
+h5 {
+	padding: 0;
+	color: #808080;
+	font-weight: normal;
+	font-size: 14px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.headerTwoFooter {
+	margin-top: 40px;
+	text-align: center;
+	margin-bottom: 5px;
+	color: #000;
+	font-size: 16px;
+	font-weight: normal;
+}
+.headerFiveFooter {
+	margin: 40px 0px 10px 0px;
+	padding: 0;
+	color: #808080;
+	font-weight: normal;
+	font-size: 14px;
+	text-align: center;
+}
+.propertyImage {
+	background: url(https://www.truzip.com/images/head.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	height: 300px;
+	overflow-x: hidden;
+	position: relative;
+	margin-bottom: 40px;
+	margin-top: 20px;
+}
+.imageOverlayTop {
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 6px 15px 6px 4px;
+	clear: both;
+	z-index: 1000;
+	position: absolute;
+	top: 0;
+}
+.imageOverlaybottom {
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 6px 15px 6px 4px;
+	clear: both;
+	z-index: 1000;
+	position: absolute;
+	bottom: 0;
+}
+.imageLabel {
+	color: #000;
+	font-size: 16px;
+	margin-right: 10px;
+}
+.imageValue {
+	color: #000;
+	font-size: 16px;
+	font-weight: bold;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.GridAlterBg {
+	background-color: #f2f2f2;
+}
+.DetailsDataTable {
+	color: 'rgba (0, 0, 0, 0.8)';
+	padding: 0px 4px 0px 4px;
+	font-size: 12px;
+	text-align: center;
+}
+.DetailsDataTableValue {
+	color: black;
+	padding: 0px 4px 0px 4px;
+	font-size: 14px;
+	text-align: center;
+	font-weight: bold;
+}
+.TableAlterSelected {
+	background-color: #f2efca;
+}
+.TableSelected {
+	background-color: #fffcd5;
+}
+.DetailsDataTableAlterSelected {
+	color: 'rgba (0, 0, 0, 0.8)';
+	padding: 0px 4px 0px 4px;
+	font-size: 12px;
+	text-align: center;
+	background-color: #f2efca;
+}
+.DetailsDataTableValueTableSelected {
+	color: black;
+	padding: 0px 4px 0px 4px;
+	font-size: 14px;
+	text-align: center;
+	font-weight: bold;
+	background-color: #fffcd5;
+}
+.DetailsDataTableValueAlterSelected {
+	color: black;
+	padding: 0px 4px 0px 4px;
+	font-size: 14px;
+	text-align: center;
+	font-weight: bold;
+	background-color: #f2efca;
+}

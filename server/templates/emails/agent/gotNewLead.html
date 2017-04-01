@@ -1,0 +1,25 @@
+{{ mainHeader }}
+<div {{ inline_mainBody }}>
+    <h1 {{ inline_h1 }}>New Lead - Action Required</h1>
+    <h3 {{ inline_h3 }}>Hi {{ agentName }},</h3>
+    <h4 {{ inline_h4 }}>We have run a targeted ad campaign and generated a lead for you. The leads email is <a href="mailto:{{ email }}">{{ email }}</a>. The lead is interested in " {{ city }} ". We have sent a welcome email to the user.</h4>
+    <h4 {{ inline_h4 }}>Introduce yourself to the lead. Mention how you differentiate from other agents. An effective response email would look something like this:</h4>
+
+    <h3 {{ inline_h3 }}>Hi,</h3>
+
+  	<h4 {{ inline_h4 }}>
+  		Thank you for registering on Truzip. I am the Truzip premier agent for {{ city }}. I understand you may not be ready to buy yet and are simply browsing, however, one of the services I provide my clients is to inform them on "deals" within their search area(s). This information can help you better negotiate when it comes time and give you a sense of what types of properties are selling quickly.
+  	</h4>
+  	<h4 {{ inline_h4 }}>Would you be interested in receiving these types of alerts?</h4>
+  	<h4 {{ inline_h4 }}>Best,</h4>
+  	<h4 {{ inline_h4 }}>[Your Name and Details]</h4>
+    {[ if (leadsLeft) { ]}
+    	<h4 {{ inline_h4 }}>
+    		According to your subscription, we must provide you with {{ leadsLeft }} more Leads by the end of your current billing cycle.
+    	</h4>
+    {[ } ]}
+  	<h4 {{ inline_h4 }}>Regards, The Truzip Team.</h4>
+    {{ mainFooter }}
+</div>
+
+

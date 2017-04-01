@@ -1,0 +1,22 @@
+{{ mainHeader }}
+<div {{ inline_mainBody }}>
+    <h1 {{ inline_h1 }}>Your Lead Updates</h1>
+    <h3 {{ inline_h3 }}>Hi, {{ agentName }}</h3>
+    <h3 {{ inline_h3 }}>Below are your lead details</h3>
+    <h4 {{ inline_h4 }}>Email address of your lead: <a href="mailto:{{ email }}">{{ email }}</a>.</h4>
+    {[ if (multiSelect) { ]}
+        <h4 {{ inline_h4 }}>Search Areas: {{ city }}.</h4>
+    {[ } else { ]}
+        <h4 {{ inline_h4 }}>Search Area: {{ city }}.</h4>
+    {[ } ]}
+    <h4 {{ inline_h4 }}>The consumer registered on the Truzip website with this email address and recently sent a message to be contacted by a Truzip Premier Agent.</h4>
+    <h4 {{ inline_h4 }}>The consumer is very interested in buying a property with Truzip.</h4>
+    <h3 {{ inline_h3 }}>Text which caused the consumer to give us thier email</h3>
+    <h4 {{ inline_h4 }}>"Below Market" homes are few and sell fast. They are typically priced low due to the seller needing to move or as part of a distress sale.</h4>
+    <h4 {{ inline_h4 }}>Our local agents alert you on these "deals" for free. They even return part of thier comission to you, reducing your total cost further.</h4>
+    <h3 {{ inline_h3 }}>We suggest you respond as soon as possible</h3>
+    <h4 {{ inline_h4 }}>Mention you are a Truzip premier agent. Provide a hook as to how you differentiate amongst other agents.</h4>
+    <h4 {{ inline_h4 }}>Immediate responses are 500% more effective.</h4>
+    <h4 {{ inline_h4 }}>We will continue to send you emails as the consumer interacts further.</h4>
+    {{ mainFooter }}
+</div>

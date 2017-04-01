@@ -1,0 +1,74 @@
+// ====================================================================
+// The base styles for the project
+// ====================================================================
+
+@include font-face($font_lanenar, font-files($font_src_epoclassic_woff, $font_src_epoclassic_ttf, $font_src_epoclassic_svg), $font_src_epoclassic_eot);
+
+body {
+    @extend %font-sans;
+    font-size: 14px;
+    background-color: $white;
+    color: $black;
+    min-width: 320px;
+    // Modernizr fallback for when there is no fontface support
+    .no-fontface & {
+        font-size: 17px;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.sub-head {
+    padding-bottom: 50px;
+    @extend %block;
+}
+
+.pad-top-botm {
+    @include pad-top-bottom;
+}
+
+h1 {
+    @extend %header_1;
+}
+
+h2 {
+    @extend %header_2;
+}
+
+h3 {
+    @extend %header_3;
+}
+
+h4 {
+    @extend %header_4;
+}
+
+h5 {
+    @extend %header_5;
+}
+
+h6 {
+    @extend %header_6;
+}
+
+.popupTitle {
+    color: $color_apple_approx;
+    font-size: 30px;
+    font-family: $font_lanenar;
+    text-align: center;
+}
+
+.right {
+    @extend %fr;
+}
+
+.bold {
+    font-weight: 700;
+    font-family: $font_proxima_nova, $font_sans-serif;
+}
+
+.clear {
+    clear: left;
+}

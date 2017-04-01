@@ -1,0 +1,1657 @@
+// ====================================================================
+// Layout styles, should only contain rules relating to the structure
+// ====================================================================
+
+// Nav Bar Social Icons, Phone Number and Login Bar
+// ====================================================================
+
+.top-widget {
+    .social-icons {
+        margin-top: 10px;
+        margin-right: 20px;
+    }
+
+    .phone-number {
+        color: $color_gray_approx;
+        font-family: $font_open_sans, $font_sans-serif;
+        font-size: calc-em(11px);
+        text-transform: uppercase;
+    }
+}
+
+.social-icons {
+    @extend %margin0;
+
+    li {
+        float: left;
+        display: inline;
+        list-style: none;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        text-indent: -9999px;
+
+        a {
+            @extend %extend_1;
+        }
+
+        &:hover a {
+            background-position: 0 -38px;
+        }
+    }
+}
+
+a {
+    &.social-icon {
+        @extend %extend_1;
+    }
+
+    &.list-group-item {
+        color: $color_fuscous_gray_approx;
+
+        .list-group-item-heading {
+            color: $color_mine_shaft_approx;
+        }
+
+        &:hover {
+            @extend %extend_7;
+        }
+
+        &:focus {
+            @extend %extend_7;
+        }
+    }
+
+    &.list-group-item-success {
+        color: $color_chelsea_cucumber_approx;
+
+        .list-group-item-heading {
+            color: inherit;
+        }
+
+        &:hover {
+            color: $color_chelsea_cucumber_approx;
+            background-color: $color_pine_glade_approx;
+        }
+
+        &:focus {
+            color: $color_chelsea_cucumber_approx;
+            background-color: $color_pine_glade_approx;
+        }
+
+        &.active {
+            @extend %extend_10;
+
+            &:hover {
+                @extend %extend_10;
+            }
+
+            &:focus {
+                @extend %extend_10;
+            }
+        }
+    }
+
+    &.list-group-item-info {
+        color: $color_calypso_approx;
+
+        .list-group-item-heading {
+            color: inherit;
+        }
+
+        &:hover {
+            color: $color_calypso_approx;
+            background-color: $color_tropical_blue_approx;
+        }
+
+        &:focus {
+            color: $color_calypso_approx;
+            background-color: $color_tropical_blue_approx;
+        }
+
+        &.active {
+            @extend %extend_11;
+
+            &:hover {
+                @extend %extend_11;
+            }
+
+            &:focus {
+                @extend %extend_11;
+            }
+        }
+    }
+
+    &.list-group-item-warning {
+        color: $color_driftwood_approx;
+
+        .list-group-item-heading {
+            color: inherit;
+        }
+
+        &:hover {
+            color: $color_driftwood_approx;
+            background-color: $color_santa_fe_approx;
+        }
+
+        &:focus {
+            color: $color_driftwood_approx;
+            background-color: $color_santa_fe_approx;
+        }
+
+        &.active {
+            @extend %extend_12;
+
+            &:hover {
+                @extend %extend_12;
+            }
+
+            &:focus {
+                @extend %extend_12;
+            }
+        }
+    }
+
+    &.list-group-item-danger {
+        color: $color_well_read_approx;
+
+        .list-group-item-heading {
+            color: inherit;
+        }
+
+        &:hover {
+            color: $color_well_read_approx;
+            background-color: $color_burnt_umber_approx;
+        }
+
+        &:focus {
+            color: $color_well_read_approx;
+            background-color: $color_burnt_umber_approx;
+        }
+
+        &.active {
+            @extend %extend_13;
+
+            &:hover {
+                @extend %extend_13;
+            }
+
+            &:focus {
+                @extend %extend_13;
+            }
+        }
+    }
+
+    &.text-primary:hover {
+        color: $color_elm_approx;
+    }
+
+    &.text-info:hover {
+        color: $color_san_juan_approx;
+    }
+
+    &#openContactAgent button {
+        margin-top: 6px;
+        font-size: 12px;
+        width: 125px;
+        float: left;
+        padding: 6px;
+    }
+}
+
+.social_amazon {
+    background: $image_url_social_icons_0 no-repeat;
+}
+
+.social_behance {
+    background: $image_url_social_icons_1 no-repeat;
+}
+
+.social_blogger {
+    background: $image_url_social_icons_2 no-repeat;
+}
+
+.social_deviantart {
+    background: $image_url_social_icons_3 no-repeat;
+}
+
+.social_dribbble {
+    background: $image_url_social_icons_4 no-repeat;
+}
+
+.social_dropbox {
+    background: $image_url_social_icons_5 no-repeat;
+}
+
+.social_evernote {
+    background: $image_url_social_icons_6 no-repeat;
+}
+
+.social_facebook {
+    background: $image_url_social_icons_7 no-repeat;
+}
+
+.social_forrst {
+    background: $image_url_social_icons_8 no-repeat;
+}
+
+.social_github {
+    background: $image_url_social_icons_9 no-repeat;
+}
+
+.social_googleplus {
+    background: $image_url_social_icons_10 no-repeat;
+}
+
+.social_jolicloud {
+    background: $image_url_social_icons_11 no-repeat;
+}
+
+.social_last-fm {
+    background: $image_url_social_icons_12 no-repeat;
+}
+
+.social_linkedin {
+    background: $image_url_social_icons_13 no-repeat;
+}
+
+.social_picasa {
+    background: $image_url_social_icons_14 no-repeat;
+}
+
+.social_pintrest {
+    background: $image_url_social_icons_15 no-repeat;
+}
+
+.social_rss {
+    background: $image_url_social_icons_16 no-repeat;
+}
+
+.social_skype {
+    background: $image_url_social_icons_17 no-repeat;
+}
+
+.social_spotify {
+    background: $image_url_social_icons_18 no-repeat;
+}
+
+.social_stumbleupon {
+    background: $image_url_social_icons_19 no-repeat;
+}
+
+.social_tumblr {
+    background: $image_url_social_icons_20 no-repeat;
+}
+
+.social_twitter {
+    background: $image_url_social_icons_21 no-repeat;
+}
+
+.social_vimeo {
+    background: $image_url_social_icons_22 no-repeat;
+}
+
+.social_wordpress {
+    background: $image_url_social_icons_23 no-repeat;
+}
+
+.social_xing {
+    background: $image_url_social_icons_24 no-repeat;
+}
+
+.social_yahoo {
+    background: $image_url_social_icons_25 no-repeat;
+}
+
+.social_youtube {
+    background: $image_url_social_icons_26 no-repeat;
+}
+
+.icon-alarm-clock:before {
+    @extend %extend_15;
+
+    content: "\f100";
+}
+
+.icon-baby-monitor:before {
+    @extend %extend_15;
+
+    content: "\f101";
+}
+
+.icon-bar-stool:before {
+    @extend %extend_15;
+
+    content: "\f102";
+}
+
+.icon-bed:before {
+    @extend %extend_15;
+
+    content: "\f103";
+}
+
+.icon-book-shelf:before {
+    @extend %extend_15;
+
+    content: "\f104";
+}
+
+.icon-broom:before {
+    @extend %extend_15;
+
+    content: "\f105";
+}
+
+.icon-cabinet:before {
+    @extend %extend_15;
+
+    content: "\f106";
+}
+
+.icon-chair-1:before {
+    @extend %extend_15;
+
+    content: "\f107";
+}
+
+.icon-chair-2:before {
+    @extend %extend_15;
+
+    content: "\f108";
+}
+
+.icon-crib:before {
+    @extend %extend_15;
+
+    content: "\f109";
+}
+
+.icon-dish-washer:before {
+    @extend %extend_15;
+
+    content: "\f10a";
+}
+
+.icon-door-key:before {
+    @extend %extend_15;
+
+    content: "\f10b";
+}
+
+.icon-door:before {
+    @extend %extend_15;
+
+    content: "\f10c";
+}
+
+.icon-fence:before {
+    @extend %extend_15;
+
+    content: "\f10d";
+}
+
+.icon-garbage-can:before {
+    @extend %extend_15;
+
+    content: "\f10e";
+}
+
+.icon-garden-rake:before {
+    @extend %extend_15;
+
+    content: "\f10f";
+}
+
+.icon-garden-spade:before {
+    @extend %extend_15;
+
+    content: "\f110";
+}
+
+.icon-gate:before {
+    @extend %extend_15;
+
+    content: "\f111";
+}
+
+.icon-globe:before {
+    @extend %extend_15;
+
+    content: "\f112";
+}
+
+.icon-home-1:before {
+    @extend %extend_15;
+
+    content: "\f113";
+}
+
+.icon-home-2:before {
+    @extend %extend_15;
+
+    content: "\f114";
+}
+
+.icon-home-fill-1:before {
+    @extend %extend_15;
+
+    content: "\f115";
+}
+
+.icon-hung-picture:before {
+    @extend %extend_15;
+
+    content: "\f116";
+}
+
+.icon-lamp-1:before {
+    @extend %extend_15;
+
+    content: "\f117";
+}
+
+.icon-lamp-2:before {
+    @extend %extend_15;
+
+    content: "\f118";
+}
+
+.icon-lamp-3:before {
+    @extend %extend_15;
+
+    content: "\f119";
+}
+
+.icon-light-bulb:before {
+    @extend %extend_15;
+
+    content: "\f11a";
+}
+
+.icon-light-fixture:before {
+    @extend %extend_15;
+
+    content: "\f11b";
+}
+
+.icon-light-switch:before {
+    @extend %extend_15;
+
+    content: "\f11c";
+}
+
+.icon-microwave:before {
+    @extend %extend_15;
+
+    content: "\f11d";
+}
+
+.icon-pain-can:before {
+    @extend %extend_15;
+
+    content: "\f11e";
+}
+
+.icon-paint-brush:before {
+    @extend %extend_15;
+
+    content: "\f11f";
+}
+
+.icon-paint-roller:before {
+    @extend %extend_15;
+
+    content: "\f120";
+}
+
+.icon-plug-fill:before {
+    @extend %extend_15;
+
+    content: "\f121";
+}
+
+.icon-plug:before {
+    @extend %extend_15;
+
+    content: "\f122";
+}
+
+.icon-plunger:before {
+    @extend %extend_15;
+
+    content: "\f123";
+}
+
+.icon-recycle:before {
+    @extend %extend_15;
+
+    content: "\f124";
+}
+
+.icon-refrigerator-1:before {
+    @extend %extend_15;
+
+    content: "\f125";
+}
+
+.icon-refrigerator-2:before {
+    @extend %extend_15;
+
+    content: "\f126";
+}
+
+.icon-shovel:before {
+    @extend %extend_15;
+
+    content: "\f127";
+}
+
+.icon-soap-bottle:before {
+    @extend %extend_15;
+
+    content: "\f128";
+}
+
+.icon-sofa-chair:before {
+    @extend %extend_15;
+
+    content: "\f129";
+}
+
+.icon-stove-top:before {
+    @extend %extend_15;
+
+    content: "\f12a";
+}
+
+.icon-stove-vent:before {
+    @extend %extend_15;
+
+    content: "\f12b";
+}
+
+.icon-swing:before {
+    @extend %extend_15;
+
+    content: "\f12c";
+}
+
+.icon-table-1:before {
+    @extend %extend_15;
+
+    content: "\f12d";
+}
+
+.icon-table-2:before {
+    @extend %extend_15;
+
+    content: "\f12e";
+}
+
+.icon-thermostat:before {
+    @extend %extend_15;
+
+    content: "\f12f";
+}
+
+.icon-toilet:before {
+    @extend %extend_15;
+
+    content: "\f130";
+}
+
+.icon-washer-dryer:before {
+    @extend %extend_15;
+
+    content: "\f131";
+}
+
+.icon-window-1:before {
+    @extend %extend_15;
+
+    content: "\f132";
+}
+
+.icon-window-2:before {
+    @extend %extend_15;
+
+    content: "\f133";
+}
+
+.icon-window-3:before {
+    @extend %extend_15;
+
+    content: "\f134";
+}
+
+.icon-add-symbol:before {
+    @extend %extend_16;
+
+    content: "\f100";
+}
+
+.icon-address-book:before {
+    @extend %extend_16;
+
+    content: "\f101";
+}
+
+.icon-alert:before {
+    @extend %extend_16;
+
+    content: "\f102";
+}
+
+.icon-app-icon:before {
+    @extend %extend_16;
+
+    content: "\f103";
+}
+
+.icon-battery-full:before {
+    @extend %extend_16;
+
+    content: "\f104";
+}
+
+.icon-battery-low:before {
+    @extend %extend_16;
+
+    content: "\f105";
+}
+
+.icon-bell-fill:before {
+    @extend %extend_16;
+
+    content: "\f106";
+}
+
+.icon-bell:before {
+    @extend %extend_16;
+
+    content: "\f107";
+}
+
+.icon-bin:before {
+    @extend %extend_16;
+
+    content: "\f108";
+}
+
+.icon-bluetooth-thick:before {
+    @extend %extend_16;
+
+    content: "\f109";
+}
+
+.icon-bluetooth:before {
+    @extend %extend_16;
+
+    content: "\f10a";
+}
+
+.icon-bookmark:before {
+    @extend %extend_16;
+
+    content: "\f10b";
+}
+
+.icon-briefcase-1:before {
+    @extend %extend_16;
+
+    content: "\f10c";
+}
+
+.icon-briefcase-2:before {
+    @extend %extend_16;
+
+    content: "\f10d";
+}
+
+.icon-browser-check:before {
+    @extend %extend_16;
+
+    content: "\f10e";
+}
+
+.icon-browser-heart:before {
+    @extend %extend_16;
+
+    content: "\f10f";
+}
+
+.icon-browser-location:before {
+    @extend %extend_16;
+
+    content: "\f110";
+}
+
+.icon-browser-star:before {
+    @extend %extend_16;
+
+    content: "\f111";
+}
+
+.icon-browser:before {
+    @extend %extend_16;
+
+    content: "\f112";
+}
+
+.icon-building:before {
+    @extend %extend_16;
+
+    content: "\f113";
+}
+
+.icon-bulleted-list:before {
+    @extend %extend_16;
+
+    content: "\f114";
+}
+
+.icon-calendar-1:before {
+    @extend %extend_16;
+
+    content: "\f115";
+}
+
+.icon-calendar-2:before {
+    @extend %extend_16;
+
+    content: "\f116";
+}
+
+.icon-cancel:before {
+    @extend %extend_16;
+
+    content: "\f117";
+}
+
+.icon-categories:before {
+    @extend %extend_16;
+
+    content: "\f118";
+}
+
+.icon-checkmark-thick:before {
+    @extend %extend_16;
+
+    content: "\f119";
+}
+
+.icon-checkmark:before {
+    @extend %extend_16;
+
+    content: "\f11a";
+}
+
+.icon-cigarette:before {
+    @extend %extend_16;
+
+    content: "\f11b";
+}
+
+.icon-circle-delete:before {
+    @extend %extend_16;
+
+    content: "\f11c";
+}
+
+.icon-cloud-download:before {
+    @extend %extend_16;
+
+    content: "\f11d";
+}
+
+.icon-cloud-upload:before {
+    @extend %extend_16;
+
+    content: "\f11e";
+}
+
+.icon-collage:before {
+    @extend %extend_16;
+
+    content: "\f11f";
+}
+
+.icon-comment-1:before {
+    @extend %extend_16;
+
+    content: "\f120";
+}
+
+.icon-comment-2:before {
+    @extend %extend_16;
+
+    content: "\f121";
+}
+
+.icon-comment-add:before {
+    @extend %extend_16;
+
+    content: "\f122";
+}
+
+.icon-comment-fill-1:before {
+    @extend %extend_16;
+
+    content: "\f123";
+}
+
+.icon-comment-fill-2:before {
+    @extend %extend_16;
+
+    content: "\f124";
+}
+
+.icon-comment-heart-2:before {
+    @extend %extend_16;
+
+    content: "\f125";
+}
+
+.icon-comment-heart-fill:before {
+    @extend %extend_16;
+
+    content: "\f126";
+}
+
+.icon-comment-heart:before {
+    @extend %extend_16;
+
+    content: "\f127";
+}
+
+.icon-comment-star-fill:before {
+    @extend %extend_16;
+
+    content: "\f128";
+}
+
+.icon-comment-star:before {
+    @extend %extend_16;
+
+    content: "\f129";
+}
+
+.icon-comment-typing:before {
+    @extend %extend_16;
+
+    content: "\f12a";
+}
+
+.icon-compose:before {
+    @extend %extend_16;
+
+    content: "\f12b";
+}
+
+.icon-computer-mouse:before {
+    @extend %extend_16;
+
+    content: "\f12c";
+}
+
+.icon-connection:before {
+    @extend %extend_16;
+
+    content: "\f12d";
+}
+
+.icon-contrast:before {
+    @extend %extend_16;
+
+    content: "\f12e";
+}
+
+.icon-copyright:before {
+    @extend %extend_16;
+
+    content: "\f12f";
+}
+
+.icon-crop-tool:before {
+    @extend %extend_16;
+
+    content: "\f130";
+}
+
+.icon-cross-fill:before {
+    @extend %extend_16;
+
+    content: "\f131";
+}
+
+.icon-cross:before {
+    @extend %extend_16;
+
+    content: "\f132";
+}
+
+.icon-crossing:before {
+    @extend %extend_16;
+
+    content: "\f133";
+}
+
+.icon-crown:before {
+    @extend %extend_16;
+
+    content: "\f134";
+}
+
+.icon-delete-bin:before {
+    @extend %extend_16;
+
+    content: "\f135";
+}
+
+.icon-delete-symbol:before {
+    @extend %extend_16;
+
+    content: "\f136";
+}
+
+.icon-dial-pad:before {
+    @extend %extend_16;
+
+    content: "\f137";
+}
+
+.icon-document-add:before {
+    @extend %extend_16;
+
+    content: "\f138";
+}
+
+.icon-document-bar:before {
+    @extend %extend_16;
+
+    content: "\f139";
+}
+
+.icon-document-blank-fill:before {
+    @extend %extend_16;
+
+    content: "\f13a";
+}
+
+.icon-document-blank:before {
+    @extend %extend_16;
+
+    content: "\f13b";
+}
+
+.icon-document-check:before {
+    @extend %extend_16;
+
+    content: "\f13c";
+}
+
+.icon-document-delete:before {
+    @extend %extend_16;
+
+    content: "\f13d";
+}
+
+.icon-document-heart:before {
+    @extend %extend_16;
+
+    content: "\f13e";
+}
+
+.icon-document-line:before {
+    @extend %extend_16;
+
+    content: "\f13f";
+}
+
+.icon-document-open:before {
+    @extend %extend_16;
+
+    content: "\f140";
+}
+
+.icon-document-sub:before {
+    @extend %extend_16;
+
+    content: "\f141";
+}
+
+.icon-documents-bar:before {
+    @extend %extend_16;
+
+    content: "\f142";
+}
+
+.icon-documents-check:before {
+    @extend %extend_16;
+
+    content: "\f143";
+}
+
+.icon-documents-fill:before {
+    @extend %extend_16;
+
+    content: "\f144";
+}
+
+.icon-documents-heart:before {
+    @extend %extend_16;
+
+    content: "\f145";
+}
+
+.icon-documents-line:before {
+    @extend %extend_16;
+
+    content: "\f146";
+}
+
+.icon-documents:before {
+    @extend %extend_16;
+
+    content: "\f147";
+}
+
+.icon-download-1:before {
+    @extend %extend_16;
+
+    content: "\f148";
+}
+
+.icon-download-2:before {
+    @extend %extend_16;
+
+    content: "\f149";
+}
+
+.icon-download-all:before {
+    @extend %extend_16;
+
+    content: "\f14a";
+}
+
+.icon-easel:before {
+    @extend %extend_16;
+
+    content: "\f14b";
+}
+
+.icon-envelope-1:before {
+    @extend %extend_16;
+
+    content: "\f14c";
+}
+
+.icon-envelope-2:before {
+    @extend %extend_16;
+
+    content: "\f14d";
+}
+
+.icon-envelope-3:before {
+    @extend %extend_16;
+
+    content: "\f14e";
+}
+
+.icon-envelope-fill-1:before {
+    @extend %extend_16;
+
+    content: "\f14f";
+}
+
+.icon-factory:before {
+    @extend %extend_16;
+
+    content: "\f150";
+}
+
+.icon-file-box:before {
+    @extend %extend_16;
+
+    content: "\f151";
+}
+
+.icon-filing-cabinet:before {
+    @extend %extend_16;
+
+    content: "\f152";
+}
+
+.icon-flag-1:before {
+    @extend %extend_16;
+
+    content: "\f153";
+}
+
+.icon-flag-2:before {
+    @extend %extend_16;
+
+    content: "\f154";
+}
+
+.icon-floppy-disk:before {
+    @extend %extend_16;
+
+    content: "\f155";
+}
+
+.icon-folder-add:before {
+    @extend %extend_16;
+
+    content: "\f156";
+}
+
+.icon-folder-check:before {
+    @extend %extend_16;
+
+    content: "\f157";
+}
+
+.icon-folder-delete:before {
+    @extend %extend_16;
+
+    content: "\f158";
+}
+
+.icon-folder-fill:before {
+    @extend %extend_16;
+
+    content: "\f159";
+}
+
+.icon-folder-open:before {
+    @extend %extend_16;
+
+    content: "\f15a";
+}
+
+.icon-folder-sub:before {
+    @extend %extend_16;
+
+    content: "\f15b";
+}
+
+.icon-folder:before {
+    @extend %extend_16;
+
+    content: "\f15c";
+}
+
+.icon-ghost:before {
+    @extend %extend_16;
+
+    content: "\f15d";
+}
+
+.icon-graduation:before {
+    @extend %extend_16;
+
+    content: "\f15e";
+}
+
+.icon-group:before {
+    @extend %extend_16;
+
+    content: "\f15f";
+}
+
+.icon-hammer:before {
+    @extend %extend_16;
+
+    content: "\f160";
+}
+
+.icon-high-definition:before {
+    @extend %extend_16;
+
+    content: "\f161";
+}
+
+.icon-hour-glass:before {
+    @extend %extend_16;
+
+    content: "\f162";
+}
+
+.icon-identification:before {
+    @extend %extend_16;
+
+    content: "\f163";
+}
+
+.icon-inbox-1:before {
+    @extend %extend_16;
+
+    content: "\f164";
+}
+
+.icon-inbox-2:before {
+    @extend %extend_16;
+
+    content: "\f165";
+}
+
+.icon-inbox-3:before {
+    @extend %extend_16;
+
+    content: "\f166";
+}
+
+.icon-inbox-fill-1:before {
+    @extend %extend_16;
+
+    content: "\f167";
+}
+
+.icon-inbox-fill-2:before {
+    @extend %extend_16;
+
+    content: "\f168";
+}
+
+.icon-information:before {
+    @extend %extend_16;
+
+    content: "\f169";
+}
+
+.icon-link:before {
+    @extend %extend_16;
+
+    content: "\f16a";
+}
+
+.icon-location-pin:before {
+    @extend %extend_16;
+
+    content: "\f16b";
+}
+
+.icon-lock-fill:before {
+    @extend %extend_16;
+
+    content: "\f16c";
+}
+
+.icon-lock:before {
+    @extend %extend_16;
+
+    content: "\f16d";
+}
+
+.icon-manager:before {
+    @extend %extend_16;
+
+    content: "\f16e";
+}
+
+.icon-minus-symbol:before {
+    @extend %extend_16;
+
+    content: "\f16f";
+}
+
+.icon-mirror:before {
+    @extend %extend_16;
+
+    content: "\f170";
+}
+
+.icon-new-window:before {
+    @extend %extend_16;
+
+    content: "\f171";
+}
+
+.icon-newspaper:before {
+    @extend %extend_16;
+
+    content: "\f172";
+}
+
+.icon-note-pad:before {
+    @extend %extend_16;
+
+    content: "\f173";
+}
+
+.icon-outbox-fill:before {
+    @extend %extend_16;
+
+    content: "\f174";
+}
+
+.icon-outbox:before {
+    @extend %extend_16;
+
+    content: "\f175";
+}
+
+.icon-paint-brushes:before {
+    @extend %extend_16;
+
+    content: "\f176";
+}
+
+.icon-paint-palette:before {
+    @extend %extend_16;
+
+    content: "\f177";
+}
+
+.icon-paper-document-image:before {
+    @extend %extend_16;
+
+    content: "\f178";
+}
+
+.icon-paper-document:before {
+    @extend %extend_16;
+
+    content: "\f179";
+}
+
+.icon-paper-documents-image:before {
+    @extend %extend_16;
+
+    content: "\f17a";
+}
+
+.icon-paper-documents:before {
+    @extend %extend_16;
+
+    content: "\f17b";
+}
+
+.icon-paper-stack:before {
+    @extend %extend_16;
+
+    content: "\f17c";
+}
+
+.icon-paperclip:before {
+    @extend %extend_16;
+
+    content: "\f17d";
+}
+
+.icon-path-tool:before {
+    @extend %extend_16;
+
+    content: "\f17e";
+}
+
+.icon-phone-fill:before {
+    @extend %extend_16;
+
+    content: "\f17f";
+}
+
+.icon-phone:before {
+    @extend %extend_16;
+
+    content: "\f180";
+}
+
+.icon-plane-fill:before {
+    @extend %extend_16;
+
+    content: "\f181";
+}
+
+.icon-plane:before {
+    @extend %extend_16;
+
+    content: "\f182";
+}
+
+.icon-power-on:before {
+    @extend %extend_16;
+
+    content: "\f183";
+}
+
+.icon-presentation:before {
+    @extend %extend_16;
+
+    content: "\f184";
+}
+
+.icon-printer:before {
+    @extend %extend_16;
+
+    content: "\f185";
+}
+
+.icon-projector-screen-bar:before {
+    @extend %extend_16;
+
+    content: "\f186";
+}
+
+.icon-projector-screen-line:before {
+    @extend %extend_16;
+
+    content: "\f187";
+}
+
+.icon-projector-screen:before {
+    @extend %extend_16;
+
+    content: "\f188";
+}
+
+.icon-quotes:before {
+    @extend %extend_16;
+
+    content: "\f189";
+}
+
+.icon-rook:before {
+    @extend %extend_16;
+
+    content: "\f18a";
+}
+
+.icon-ruler:before {
+    @extend %extend_16;
+
+    content: "\f18b";
+}
+
+.icon-save:before {
+    @extend %extend_16;
+
+    content: "\f18c";
+}
+
+.icon-scissors:before {
+    @extend %extend_16;
+
+    content: "\f18d";
+}
+
+.icon-scope:before {
+    @extend %extend_16;
+
+    content: "\f18e";
+}
+
+.icon-search-add:before {
+    @extend %extend_16;
+
+    content: "\f18f";
+}
+
+.icon-search-sub:before {
+    @extend %extend_16;
+
+    content: "\f190";
+}
+
+.icon-search:before {
+    @extend %extend_16;
+
+    content: "\f191";
+}
+
+.icon-server:before {
+    @extend %extend_16;
+
+    content: "\f192";
+}
+
+.icon-settings-wheel-fill:before {
+    @extend %extend_16;
+
+    content: "\f193";
+}
+
+.icon-settings-wheel:before {
+    @extend %extend_16;
+
+    content: "\f194";
+}
+
+.icon-share:before {
+    @extend %extend_16;
+
+    content: "\f195";
+}
+
+.icon-shield:before {
+    @extend %extend_16;
+
+    content: "\f196";
+}
+
+.icon-signal:before {
+    @extend %extend_16;
+
+    content: "\f197";
+}
+
+.icon-sliders:before {
+    @extend %extend_16;
+
+    content: "\f198";
+}
+
+.icon-star-of-david:before {
+    @extend %extend_16;
+
+    content: "\f199";
+}
+
+.icon-task-check:before {
+    @extend %extend_16;
+
+    content: "\f19a";
+}
+
+.icon-think-bubbles:before {
+    @extend %extend_16;
+
+    content: "\f19b";
+}
+
+.icon-tic-tac-toe:before {
+    @extend %extend_16;
+
+    content: "\f19c";
+}
+
+.icon-time-clock:before {
+    @extend %extend_16;
+
+    content: "\f19d";
+}
+
+.icon-trash-can:before {
+    @extend %extend_16;
+
+    content: "\f19e";
+}
+
+.icon-unlock-fill:before {
+    @extend %extend_16;
+
+    content: "\f19f";
+}
+
+.icon-unlock:before {
+    @extend %extend_16;
+
+    content: "\f1a0";
+}
+
+.icon-upload:before {
+    @extend %extend_16;
+
+    content: "\f1a1";
+}
+
+.icon-usb:before {
+    @extend %extend_16;
+
+    content: "\f1a2";
+}
+
+.icon-user-1:before {
+    @extend %extend_16;
+
+    content: "\f1a3";
+}
+
+.icon-user-2:before {
+    @extend %extend_16;
+
+    content: "\f1a4";
+}
+
+.icon-venn-diagram:before {
+    @extend %extend_16;
+
+    content: "\f1a5";
+}
+
+.icon-view-more-fill:before {
+    @extend %extend_16;
+
+    content: "\f1a6";
+}
+
+.icon-view-more:before {
+    @extend %extend_16;
+
+    content: "\f1a7";
+}
+
+.icon-wifi-1:before {
+    @extend %extend_16;
+
+    content: "\f1a8";
+}
+
+.icon-wifi-2:before {
+    @extend %extend_16;
+
+    content: "\f1a9";
+}
+
+.icon-wrench-fill:before {
+    @extend %extend_16;
+
+    content: "\f1aa";
+}
+
+.icon-wrench:before {
+    @extend %extend_16;
+
+    content: "\f1ab";
+}

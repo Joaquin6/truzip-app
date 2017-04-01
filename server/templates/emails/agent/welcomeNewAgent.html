@@ -1,0 +1,90 @@
+<div {{ inline_h4 }}>
+	<div >
+		<div >
+			<h1 {{ inline_h1 }}>Welcome, {{ firstName }}!</h1>
+			<p {{ inline_h2 }}>
+				Thank you for subscribing with Truzip. Below are the details on your subscription.
+			</p>
+			<br>
+			<div {{ inline_mainImage }}></div>
+		</div>
+	</div>
+	<h3 {{ inline_h3 }}>Order #{{ subscription_id }}</h3>
+	<strong>Billed To:</strong>
+	<br>
+	{{ firstName }} {{ lastName }}
+	<br>
+	{{ billing_address_line1 }}
+	<br>
+	{{ billing_address_city }}, {{ billing_address_state }} {{ billing_address_zip }}
+	<br>
+	<br>
+	<strong>Order Date:</strong>
+	<br>
+	{{ startDateString }}
+	<br>
+	<br>
+	<strong>Payment Method:</strong>
+	<br>
+	{{ card_brand }} ending **** {{ card_last4 }}
+	<br>
+	{{ email }}
+	<br>
+	<br>
+	<strong>Current Billing Cycle:</strong>
+	<br>
+	Starting : {{ startingBillingCycle }}
+	<br>
+	Ending : {{ endingBillingCycle }}
+	<br>
+	<br>
+	<br>
+	<h3 {{ inline_h3 }}>Subscription Summary</h3>
+	<table >
+		<thead>
+			<tr>
+				<td><strong>Subscription</strong></td>
+				<td ><strong>Price Per Lead</strong></td>
+				<td ><strong>Total Leads</strong></td>
+				<td ><strong>Totals</strong></td>
+			</tr>
+		</thead>
+		<tbody>
+			<!-- foreach ($order->lineItems as $line) or some such thing here -->
+			<tr>
+				<td>{{ geo }}</td>
+				<td >{{ chargePerLead }}</td>
+				<td >{{ numOfLeads }}</td>
+				<td >{{ price }}</td>
+			</tr>
+			<tr>
+				<td ></td>
+				<td ></td>
+				<td ><strong>Subtotal</strong></td>
+				<td >{{ price }}</td>
+			</tr>
+			<tr>
+				<td ></td>
+				<td ></td>
+				<td ><strong>Shipping</strong></td>
+				<td >N/A</td>
+			</tr>
+			<tr>
+				<td ></td>
+				<td ></td>
+				<td ><strong>Total</strong></td>
+				<td >{{ price }}</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+	<br>
+	<h3 {{ inline_h3 }}>Important Information</h3>
+	<div >
+		Your next billing date will be {{ endDateString }}.
+		<br>
+		If you have any questions, please email us at <a id="emailUsLink" href="" data-bypass>info@truzip.com</a>
+		<br>
+		You will be receieving a copy of your invoice to the email provided, you may reply to that email with any questions.
+	</div>
+</div>

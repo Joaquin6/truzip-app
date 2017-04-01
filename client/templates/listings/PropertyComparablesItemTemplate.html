@@ -1,0 +1,53 @@
+<div class="ListingsComparableCard" style="position: relative;">
+	<img src="{{ ImageUrl }}" style="width: 200px; height: 140px;">
+	<div class="ListingsSideBarOverlay" style="width: 200px;">
+		<div class="{{ DealIcon }}"></div>
+		<span style="margin-left: 30px;" class="ListingsPropertyDetailsValue">{{ DealType }}</span>
+	</div>
+	<div class="ListingsComparableData">
+		<div style="display: {{ YouSaveVisibility }}">
+			You Save:<span class="Value">{{ YouSave }}</span>
+		</div>
+		<div>
+			Price:<span class="Value">{{ Price }}</span>
+		</div>
+		<table width="100%" >
+			<tr>
+				{[ if (Bedrooms && BathroomsFull) { ]}
+		            <td class="DetailsDataTableValue ColumnLine">{{ Bedrooms }}/{{ BathroomsFull }}</td>
+		        {[ } else if (!Bedrooms && BathroomsFull) { ]}
+		            <td class="DetailsDataTableValue ColumnLine">{{ BathroomsFull }}</td>
+		        {[ } else if (Bedrooms && !BathroomsFull) { ]}
+		            <td class="DetailsDataTableValue ColumnLine">{{ Bedrooms }}</td>
+		        {[ } else if (!Bedrooms && !BathroomsFull) { ]}
+		        	<td class="DetailsDataTableValue ColumnLine">N/A</td>
+		        {[ } ]}
+				<td class="DetailsDataTableValue ColumnLine">{{ LivingArea }}</td>
+				<td class="DetailsDataTableValue ColumnLine">{{ LotSize }}</td>
+				<td class="DetailsDataTableValue ColumnLine">{{ YearBuilt }}</td>
+			</tr>
+			<tr>
+				{[ if (Bedrooms && BathroomsFull) { ]}
+		            <td class="DetailsDataTable ColumnLine">Bd/Bh</td>
+		        {[ } else if (!Bedrooms && BathroomsFull) { ]}
+		        	{[ if (BathroomsFull > 1) { ]}
+		            	<td class="DetailsDataTable ColumnLine">Baths</td>
+		            {[ } else if (BathroomsFull === 1) { ]}
+		            	<td class="DetailsDataTable ColumnLine">Bath</td>
+		            {[ } ]}
+		        {[ } else if (Bedrooms && !BathroomsFull) { ]}
+		            {[ if (Bedrooms > 1) { ]}
+		            	<td class="DetailsDataTable ColumnLine">Beds</td>
+		            {[ } else if (Bedrooms === 1) { ]}
+		            	<td class="DetailsDataTable ColumnLine">Bed</td>
+		            {[ } ]}
+		        {[ } else if (!Bedrooms && !BathroomsFull) { ]}
+		        	<td class="DetailsDataTable ColumnLine">Bd/Bh</td>
+		        {[ } ]}
+				<td class="DetailsDataTable ColumnLine">Sq.Ft</td>
+				<td class="DetailsDataTable ColumnLine">Lot Size</td>
+				<td class="DetailsDataTable ColumnLine">Year Built</td>
+			</tr>
+		</table>
+	</div>
+</div>

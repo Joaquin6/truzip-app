@@ -1,0 +1,193 @@
+<div class="modal-dialog" >
+	<div class="modal-content">
+		<div class="modal-body" style="height: 200px;">
+			<button  id="ListingsSearchOptionsClose" type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span class="glyphicon glyphicon-remove-circle"></span>
+			</button>
+			<table>
+				<tr>
+					<td width="140px">Price from: </td>
+					<td width="140px">Price to: </td>
+					<td width="140px">Bed/Bth: </td>
+					<td width="140px"></td>
+				</tr>
+				<tr>
+					<td>
+					<select id="SearchPriceFrom" style="width: 130px">
+						<option value="Any">Any</option>
+						<option value="50000">$50,000</option>
+						<option value="75000">$75,000</option>
+						<option value="100000">$100,000</option>
+						<option value="110000">$110,000</option>
+						<option value="120000">$120,000</option>
+						<option value="130000">$130,000</option>
+						<option value="140000">$140,000</option>
+						<option value="150000">$150,000</option>
+						<option value="160000">$160,000</option>
+						<option value="170000">$170,000</option>
+						<option value="180000">$180,000</option>
+						<option value="190000">$190,000</option>
+						<option value="200000">$200,000</option>
+						<option value="225000">$225,000</option>
+						<option value="250000">$250,000</option>
+						<option value="275000">$275,000</option>
+						<option value="300000">$300,000</option>
+						<option value="325000">$325,000</option>
+						<option value="350000">$350,000</option>
+						<option value="375000">$375,000</option>
+						<option value="400000">$400,000</option>
+						<option value="450000">$450,000</option>
+						<option value="500000">$500,000</option>
+						<option value="550000">$550,000</option>
+						<option value="600000">$600,000</option>
+						<option value="650000">$650,000</option>
+						<option value="700000">$700,000</option>
+						<option value="750000">$750,000</option>
+						<option value="800000">$800,000</option>
+						<option value="850000">$850,000</option>
+						<option value="900000">$900,000</option>
+						<option value="1000000">$1,000,000</option>
+						<option value="1250000">$1,250,000</option>
+						<option value="1500000">$1,500,000</option>
+						<option value="1750000">$1,750,000</option>
+						<option value="2000000">$2,000,000</option>
+						<option value="2250000">$2,250,000</option>
+						<option value="2500000">$2,500,000</option>
+						<option value="2750000">$2,750,000</option>
+						<option value="3000000">$3,000,000</option>
+						<option value="4000000">$4,000,000</option>
+						<option value="5000000">$5,000,000</option>
+						<option value="6000000">$6,000,000</option>
+						<option value="7000000">$7,000,000</option>
+						<option value="8000000">$8,000,000</option>
+						<option value="9000000">$9,000,000</option>
+						<option value="10000000">$10,000,000</option>
+					</select></td>
+					<td>
+					<select id="SearchPriceTo" style="width: 130px">
+						<option value="Any">Any</option>
+						<option value="50000">$50,000</option>
+						<option value="75000">$75,000</option>
+						<option value="100000">$100,000</option>
+						<option value="110000">$110,000</option>
+						<option value="120000">$120,000</option>
+						<option value="130000">$130,000</option>
+						<option value="140000">$140,000</option>
+						<option value="150000">$150,000</option>
+						<option value="160000">$160,000</option>
+						<option value="170000">$170,000</option>
+						<option value="180000">$180,000</option>
+						<option value="190000">$190,000</option>
+						<option value="200000">$200,000</option>
+						<option value="225000">$225,000</option>
+						<option value="250000">$250,000</option>
+						<option value="275000">$275,000</option>
+						<option value="300000">$300,000</option>
+						<option value="325000">$325,000</option>
+						<option value="350000">$350,000</option>
+						<option value="375000">$375,000</option>
+						<option value="400000">$400,000</option>
+						<option value="450000">$450,000</option>
+						<option value="500000">$500,000</option>
+						<option value="550000">$550,000</option>
+						<option value="600000">$600,000</option>
+						<option value="650000">$650,000</option>
+						<option value="700000">$700,000</option>
+						<option value="750000">$750,000</option>
+						<option value="800000">$800,000</option>
+						<option value="850000">$850,000</option>
+						<option value="900000">$900,000</option>
+						<option value="1000000">$1,000,000</option>
+						<option value="1250000">$1,250,000</option>
+						<option value="1500000">$1,500,000</option>
+						<option value="1750000">$1,750,000</option>
+						<option value="2000000">$2,000,000</option>
+						<option value="2250000">$2,250,000</option>
+						<option value="2500000">$2,500,000</option>
+						<option value="2750000">$2,750,000</option>
+						<option value="3000000">$3,000,000</option>
+						<option value="4000000">$4,000,000</option>
+						<option value="5000000">$5,000,000</option>
+						<option value="6000000">$6,000,000</option>
+						<option value="7000000">$7,000,000</option>
+						<option value="8000000">$8,000,000</option>
+						<option value="9000000">$9,000,000</option>
+						<option value="10000000">$10,000,000</option>
+					</select></td>
+					<td>
+					<select id="SearchBedBth" style="width: 130px">
+						<option value="Any">Any</option>
+						<option value="1.1">1+/1+</option>
+						<option value="2.1">2+/1+</option>
+						<option value="2.2">2+/2+</option>
+						<option value="3.2">3+/2+</option>
+						<option value="4.2">4+/2+</option>
+						<option value="5.2">5+/2+</option>
+						<option value="5.3">5+/3+</option>
+					</select></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Type:</td>
+					<td>Sq/Ft:</td>
+					<td>Lot size:</td>
+					<td>Year:</td>
+				</tr>
+				<tr>
+					<td>
+					<select id="SearchType" style="width: 130px">
+						<option value="Any">Any</option>
+						<option value="1">Single Family</option>
+						<option value="2">Condo/Twnhs</option>
+						<option value="3">Multi Family</option>
+						<option value="4">Manufactured</option>
+						<option value="5">Lots/Land</option>
+					</select></td>
+					<td>
+					<select id="SearchSqFoot" style="width: 130px">
+						<option value="Any">Any</option>
+						<option value="500">500+</option>
+						<option value="750">750+</option>
+						<option value="1000">1,000+</option>
+						<option value="1250">1,250+</option>
+						<option value="1500">1,500+</option>
+						<option value="1750">1,750+</option>
+						<option value="2250">2,250+</option>
+						<option value="2500">2,500+</option>
+						<option value="2750">2,750+</option>
+						<option value="3000">3,000+</option>
+					</select></td>
+					<td>
+					<select id="SearchLotSize" style="width: 130px">
+						<option value="Any">Any</option>
+						<option value="2500">2,500+</option>
+						<option value="3000">3,000+</option>
+						<option value="4000">4,000+</option>
+						<option value="5000">5,000+</option>
+						<option value="6000">6,000+</option>
+						<option value="7000">7,000+</option>
+						<option value="10000">10,000+</option>
+						<option value="20000">20,000+</option>
+					</select></td>
+					<td>
+					<select id="SearchYear" style="width: 130px">
+						<option value="Any">Any</option>
+						<option value="1">< 1</option>
+						<option value="5">< 5</option>
+						<option value="10">< 10</option>
+						<option value="15">< 15</option>
+						<option value="20">< 20</option>
+						<option value="25">< 25</option>
+					</select></td>
+				</tr>
+			</table>
+			<button id= "ListingsSearchButton" class="btn btn-success btn-block btn-mini right" style="width: 100px; margin-top: 10px; ">
+				Search
+			</button>
+			<button id= "ListingsSearchResetButton" class="btn btn-block btn-mini right" style="width: 100px; margin-top: 10px; margin-right: 10px;display:none">
+				Reset
+			</button>
+			<div class="clear"></div>
+		</div>
+	</div>
+</div>

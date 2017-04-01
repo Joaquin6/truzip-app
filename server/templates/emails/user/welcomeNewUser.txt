@@ -1,0 +1,13 @@
+
+Thank You for using Truzip!
+Our goal is to find buyers and investors like you their dream home for less.
+===========================================================================
+A service we provide (with no obligation) is to alert you on "deals" or "below market" homes within your search parameters.
+===========================================================================
+We would like to start alerting you on these deals.
+Based on your search, we will be alerting you on deals in {{ city }}.
+===========================================================================
+If you would like to stop receiving these emails, please unsubscribe here.
+===========================================================================
+
+Copyright 2016, TruZip Inc. Tustin, CA, 92782, Patents Pending

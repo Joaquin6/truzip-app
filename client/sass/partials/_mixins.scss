@@ -1,0 +1,138 @@
+// ====================================================================
+// Any non-Compass mixins used in the project
+// ====================================================================
+
+// Mixin for Headers
+// ====================================================================
+
+@mixin header-titles($text-color: $black, $text-size: 18px, $text-fam: $font_lanenar) {
+    color: $text-color;
+    font-size: $text-size;
+    font-family: $text-fam;
+}
+
+// Mixin for box-sizing
+// ====================================================================
+
+@mixin bs($bs-type: $defined-bs-type) {
+    -webkit-box-sizing: $bs-type;
+    -moz-box-sizing: $bs-type;
+    box-sizing: $bs-type;
+}
+
+// Mixin for top-bottom padding
+// ====================================================================
+
+@mixin pad-top-bottom($top-pad: 50px, $bottom-pad: 50px) {
+    padding-top: $top-pad;
+    padding-bottom: $bottom-pad;
+}
+
+// Mixin for creating pill shaped buttons
+// ====================================================================
+
+@mixin button-links($button-base: darken($white, 10%), $button-hover: darken($white, 95%)) {
+    //border: 1px solid darken($white,6%);
+    border: 0;
+    padding: .3em .6em;
+    margin-left: .7em;
+    text-decoration: none;
+
+    @include border-radius(3px);
+
+    @include text-shadow(0 1px 2px $white);
+
+    color: darken($color-link, 20%);
+    background-color: $button-base;
+
+    @extend %single-transition;
+
+    &:hover {
+        background-color: $button-hover;
+    }
+}
+
+// Media Query mixin
+// ====================================================================
+@mixin MQ($canvas) {
+    @if $canvas == XS {
+        @media only screen and (min-width: $XS) and (max-width: $S - 1) {
+            @content;
+        }
+    }
+    @else if $canvas == S {
+        @media only screen and (min-width: $S) and (max-width: $M - 1) {
+            @content;
+        }
+    }
+    @else if $canvas == M {
+        @media only screen and (min-width: $M) and (max-width: $L - 1) {
+            @content;
+        }
+    }
+    @else if $canvas == L {
+        @media only screen and (min-width: $L) and (max-width: $XL - 1) {
+            @content;
+        }
+    }
+    @else if $canvas == XL {
+        @media only screen and (min-width: $XL) and (max-width: $XXL - 1) {
+            @content;
+        }
+    }
+    @else if $canvas == XSplus {
+        @media only screen and (min-width: $XS) {
+            @content;
+        }
+    }
+    @else if $canvas == Splus {
+        @media only screen and (min-width: $S) {
+            @content;
+        }
+    }
+    @else if $canvas == Mplus {
+        @media only screen and (min-width: $M) {
+            @content;
+        }
+    }
+    @else if $canvas == Lplus {
+        @media only screen and (min-width: $L) {
+            @content;
+        }
+    }
+    @else if $canvas == XLplus {
+        @media only screen and (min-width: $XL) {
+            @content;
+        }
+    }
+    @else if $canvas == XSneg {
+        @media only screen and (max-width: $XS) {
+            @content;
+        }
+    }
+    @else if $canvas == Sneg {
+        @media only screen and (max-width: $S) {
+            @content;
+        }
+    }
+    @else if $canvas == Mneg {
+        @media only screen and (max-width: $M) {
+            @content;
+        }
+    }
+    @else if $canvas == Lneg {
+        @media only screen and (max-width: $L) {
+            @content;
+        }
+    }
+    @else if $canvas == XLneg {
+        @media only screen and (max-width: $XL) {
+            @content;
+        }
+    }
+    @else if $canvas == StoL {
+        @media only screen and (min-width: $S) and (max-width: $L - 1) {
+            @content;
+        }
+    }
+}

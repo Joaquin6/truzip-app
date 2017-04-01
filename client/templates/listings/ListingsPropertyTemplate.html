@@ -1,0 +1,37 @@
+<div id="{{ UniqueId }}" class="panel-body ListingsSideBarCard" style="position: relative;">
+	<div class="media media-clearfix-xs media-clearfix-sm">
+		<div class="media-center">
+			<div class="thumbnail">
+				<img id="PropertyMainImage" src="{{ ImageUrl }}" alt="{{ imgAlt }}" width="150" class="media-object" />
+				<div id="caption-half-down" class="caption">
+					<div class="row" style="padding: 0px 16px 0px 0px;">
+						<div id="PropertyImgRight" class="right" style="display: {{ YouSaveVisibility }};">
+							<div class="captionOne">
+								<span >You Save:</span>
+								<span class="ListingsPropertySideDetailsValue">{{ YouSave }}</span>
+							</div>
+						</div>
+						<div id="PropertyImgLeft" class="{{ DealTypeClass }}" >
+							<span class="{{ DealIcon }}"></span>
+							<span style="margin-left: 30px;" class="ListingsPropertySideDetailsValue">{{ DealType }}</span>
+						</div>
+					</div>
+				</div>
+				<div id="caption-half-up" class="caption">
+					<div class="row" style="padding: 0px 16px 0px 16px; ">
+						<div id="PropertyImgRight" class="captionTwo">
+							<span >Price:</span>
+							<span class="ListingsPropertySideDetailsValue">{{ Price }}</span>
+						</div>
+						<div id="PropertyImgLeft" class="left captionOne">
+							<span >Valuation:</span>
+							<span class="ListingsPropertySideDetailsValue">{{ ValuationPrice }}</span>
+						</div>
+					</div>
+				</div>
+				<div class="ListingsSideBarCardBorder"></div>
+			</div>
+			<div class="ListingsSideBarCardoverlay"></div>
+		</div>
+	</div>
+</div>

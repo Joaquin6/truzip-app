@@ -1,0 +1,1 @@
+bash -ex build.sh

@@ -1,0 +1,199 @@
+<div id="agentsBG">
+	<div class="row" style="padding-top: 40px; padding-bottom: 15px;">
+		<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+			<h3 style="font-size: 40px; ">Agents</h3>
+			<div class="right" style="margin-top: 20px;">
+				<button type="button" class="btn btn-success btn-block btn-lg" id="contactSales">Contact sales</button>
+			</div>
+			<h3 style="font-size: 30px; font-weight: bold; color: black;">Home Buyer and Seller Leads - $19/lead</h3>
+			<h2 style="margin-bottom: 10px; font-size: 30px;">Leads Generated Via Google Adwords</h2>
+			<div style="width: 100%; height: 1px; background-color: gray; margin: 10px; 0px 10px 0px"></div>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row text-center">
+		<div style="padding-top: 50px;" class="col-lg-3 col-lg-offset-1  col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+			<!-- <img src="images/HowItWorksB1.png" class="img-thumbnail" alt="" style="height: 250px;"> -->
+			<img src="images/HWA1.png" class="img-thumbnail" alt="" style="height: 250px;">
+			<h3>Pay per lead</h3>
+			<h4>We provide quality home buyer and seller leads to agents.</h4>
+			<!-- <h4><strong>"Deals" are homes priced lower by motivated sellers.</strong></h4> -->
+		</div>
+		<div style="padding-top: 50px;" class="col-lg-3 col-lg-offset-1  col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+			<!-- <img src="images/HowItWorksB2.png" class="img-thumbnail" alt="" style="height: 250px;"> -->
+			<img src="images/HWA2.png" class="img-thumbnail" alt="" style="height: 250px;">
+			<h3>High Converting Website</h3>
+			<h4>Our web and mobile sites attract ready-to-buy consumers.</h4>
+			<!-- <h4><strong>It's free with no obligation</strong></h4> -->
+		</div>
+		<div style="padding-top: 50px;" class="col-lg-3 col-lg-offset-1  col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+			<!-- <img src="images/HowItWorksB3.png" class="img-thumbnail" alt="" style="height: 250px;"> -->
+			<img src="images/HWA3.png" class="img-thumbnail" alt="" style="height: 250px;">
+			<h3>Leads Generated via Google CPC</h3>
+			<h4>We run targeted google/bing campaigns to generate your leads.</h4>
+			<!-- <h4><strong>We return part of our comission back to you.</strong></h4> -->
+		</div>
+	</div>	
+	<div class="row" style="padding-bottom: 50px; padding-top: 50px;">
+		<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
+			<!-- <h3>Realtors: Pay Per Lead</h3>
+			<h4>Get home buyer and seller leads that convert. Leads are targeted and exclusive to you.</h4> -->
+			
+			<div class="realtorFeeBox">
+				<div class="realtorFeeBoxLeft">
+					<h3 class="text-center" style="font-size: 40px; margin-bottom: 20px;">$19 per lead</h3>
+					<div style="width: 100%; height: 1px; background-color: gray; margin: 10px; 0px 10px 0px"></div>
+					<h1 style="font-weight: bold; color: black; margin-top: 20px;">No fees:</h1>
+					<h1 style="margin-top: 0px; ">No monthly fees, cancellation fees, refund fees.</h1>
+					<h1 style="font-weight: bold; color: black;">Exclusive:</h1>
+					<h1 style="margin-top: 0px; ">Your leads not shared with other agents.</h1>
+					<h1 style="font-weight: bold; color: black;">Targeted:</h1>
+					<h1 style="margin-top: 0px; ">Leads are targeted around the city you specify.</h1>
+				</div>
+				<div class="realtorFeeBoxRight">
+					<h1 style="color: white; font-size: 30px;">We provide tremendous value to consumers so they <u> want </u> to be contacted.</h1>
+					<h1 style="color: white; font-size: 30px; margin-top: 40px;">	Join 500+ agents who pay only $19 per lead.</h1>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div> 
+	<!-- Availability Form -->
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2" >
+			<h3 class="text-center" style="margin-bottom: 50px; margin-top: 20px; font-size: 34px;">Inventory is limited. Check availability below.</h3>
+			<form role="form" id="agent-payment-form" style="margin-bottom: 20px;">
+				<div class="panel-group" id="agentCheckoutAccordion" role="tablist" aria-multiselectable="true">
+
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="checkoutHeadingOne">
+							<h4 class="panel-title-agentCheckout">
+								<a role="button" data-toggle="collapse" data-parent="#agentCheckoutAccordion" href="#checkoutCollapseOne" aria-expanded="true" aria-controls="checkoutCollapseOne" data-bypass>
+									Step 1 - Check availability
+								</a>
+							</h4>
+						</div>
+						<div id="checkoutCollapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="checkoutHeadingOne">
+							<div class="panel-body">
+								<div id="CityAvailabilityInput" class="input-group" style="margin-top: 0px;">
+									<input id="chargingCities" class="typeahead form-control inputPlaceholder" type="text" placeholder="Enter City Name">
+									<span class="input-group-btn">
+										<button type="submit" id="CheckAvailability" class="btn btn-success btn-block btn-lg" data-loading-text="<i class='fa fa-spinner fa-spin '></i> Checking Availability...">
+											Check availability
+										</button>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="checkoutHeadingTwo">
+							<h4 class="panel-title-agentCheckout">
+								<a class="collapsed btn" role="button" data-toggle="collapse" data-parent="#agentCheckoutAccordion" href="#checkoutCollapseTwo" aria-expanded="false" aria-controls="checkoutCollapseTwo" data-bypass>
+									Step 2 - Specify Number of Leads
+								</a>
+							</h4>
+						</div>
+						<div id="checkoutCollapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="checkoutHeadingTwo">
+							<div class="panel-body">
+								<h1 style="margin-bottom: 10px; margin-top: 20px;">There is high demand in <span id="AgentSelectedCity"></span>. It could take upto 3 weeks to generate your monthly leads</h1>
+								<div class="row">
+			                        <div class="col-md-8">
+			                            <h1 style="margin: 20px 0px;">  Please select number of leads</h1>
+			                        </div>
+			                        <div class="col-md-4">
+			                            <div class="input-group" style="margin-top: 16px;">
+			                                <span class="input-group-btn">
+			                                    <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+			                                        <span class="glyphicon glyphicon-minus"></span>
+			                                    </button>
+			                                </span>
+			                                <input id="chargingAmount" type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="5">
+			                                <span class="input-group-btn">
+			                                    <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+			                                        <span class="glyphicon glyphicon-plus"></span>
+			                                    </button>
+			                                </span>
+			                            </div>
+			                        </div>
+			                    </div>
+			                    <div class="form-group">
+									<input id="AgentInputEmail" type="email" class="form-control inputPlaceholder" placeholder="Enter Email">
+								</div>
+								<div class="form-group" style="margin-top: 10px;">
+									<button type="submit" class="btn btn-success btn-block btn-lg" id="finishCheckoutStepTwoBtn">
+										Next
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="checkoutHeadingThree">
+							<h4 class="panel-title-agentCheckout">
+								<a class="collapsed btn" role="button" data-toggle="collapse" data-parent="#agentCheckoutAccordion" href="#checkoutCollapseThree" aria-expanded="false" aria-controls="checkoutCollapseThree" data-bypass>
+									Step 3 - Checkout in 60 seconds
+								</a>
+							</h4>
+						</div>
+						<div id="checkoutCollapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="checkoutHeadingThree">
+							<div class="panel-body">
+								<h1 style="margin: 10px 0px;">Your Subscription</h1>
+								<table class="table table-striped">
+									<thead>
+										<tr>
+											<th>City</th>
+											<th>Requested Leads</th>
+											<th>Email</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td id="cityConfirmCheckout"></td>
+											<td id="numofLeadsConfirmCheckout"></td>
+											<td id="emailConfirmCheckout"></td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="form-group" style="margin-top: 40px;">
+									<button type="submit" class="btn btn-primary btn-lg right" id="subscribeBtn">
+										Checkout
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</form>
+		</div>
+	</div>
+	<!-- General Questions -->
+	<div class="row">
+		<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
+			<h3 class="text-center" style="margin: 50px 0px; font-size: 34px;">General Questions</h3>
+			<h1 style="font-weight: bold; color: black; margin-bottom: 10px;">1. How do you generate the leads?</h1>
+			<h1>We run targeted google/bing cpc campaigns in your city to generate leads (both buyer and seller). Our site is highly optimized to capture buyer and seller leads.</h1>
+			<h1 style="font-weight: bold; color: black; margin-bottom: 10px; margin-top: 20px;">2. Are there any contracts, setup fees, cancellation fees.</h1>
+			<h1>No fees. Just pay $19 per lead. It is a monthly subscription - but cancel for free at any time.</h1>
+			<h1 style="font-weight: bold; color: black; margin-bottom: 10px; margin-top: 20px;">3. Are the leads shared with other agents or are they exclusive?</h1>
+			<h1 >The leads are exclusive to you. They are not shared with others.</h1>
+			<h1 style="font-weight: bold; color: black; margin-bottom: 10px; margin-top: 20px;">4. How long will it take to generate the leads.</h1>
+			<h1 >We start your campaign immediately and usually have a lead within 0-7 days. However, depending on demand, it could take upto 30 days.</h1>
+			<h1 style="font-weight: bold; color: black; margin-bottom: 10px; margin-top: 20px;">5. Is the lead guaranteed to be in my city?</h1>
+			<h1 >We try to generate the lead in your specified city, but the lead could be within a 15 mile radius of your city as well.</h1>
+			<h1 style="font-weight: bold; color: black; margin-bottom: 10px; margin-top: 20px;">6. Can you guarantee the lead will convert?</h1>
+			<h1 >We cannot. We do however guarantee that the lead will be valid and unique only to you.</h1>
+			<h1 style="font-weight: bold; color: black; margin-bottom: 10px; margin-top: 20px;">7. If a lead inquires about several properties, is that considered 1 lead or multiple?</h1>
+			<h1 >It is considered as 1 lead. A single unique buyer or seller may ask for information multiple times, but it is considered as 1 lead.</h1>
+			<h1 style="font-weight: bold; color: black; margin-bottom: 10px; margin-top: 20px;">8. Can I choose whether I want only buyer or seller leads?</h1>
+			<h1 >Not at this time. We will let you know if a lead is a buyer or seller though.</h1>
+			<h1 style="font-weight: bold; color: black; margin-bottom: 10px; margin-top: 20px;">9. How do I cancel my subscription?</h1>
+			<h1 >Simply send us an email at <a href="cancel@truzip.com">cancel@truzip.com</a>. We will process your cancellation within 24 hours and email you confirmation.</h1>
+		</div>
+	</div>
+</div>

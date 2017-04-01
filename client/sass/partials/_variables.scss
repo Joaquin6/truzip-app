@@ -1,0 +1,157 @@
+// ====================================================================
+// Variables
+// ====================================================================
+
+// Colors
+// ====================================================================
+
+$black: #000;
+$black_0_01: rgba(0, 0, 0, 0.0001);
+$black_10: rgba(0, 0, 0, 0.1);
+$black_15: rgba(0, 0, 0, 0.15);
+$black_17_5: rgba(0, 0, 0, 0.175);
+$black_40: rgba(0, 0, 0, 0.4);
+$black_46: rgba(0, 0, 0, 0.46);
+$black_50: rgba(0, 0, 0, 0.5);
+$black_60: rgba(0, 0, 0, 0.6);
+$black_65: rgba(0, 0, 0, 0.65);
+$black_70: rgba(0, 0, 0, 0.7);
+$black_80: rgba(0, 0, 0, 0.8);
+
+$white: #fff;
+$white_10: rgba(255, 255, 255, 0.1);
+$white_20: rgba(255, 255, 255, 0.2);
+$white_60: rgba(255, 255, 255, 0.6);
+$white_70: rgba(255, 255, 255, 0.7);
+$white_80: rgba(255, 255, 255, 0.8);
+$white_90: rgba(255, 255, 255, 0.9);
+
+$gray: grey;
+$mercury: #e5e5e5;
+$concrete: #f2f2f2;
+$red: #FF0000;
+$orange: #FFBF00;
+$yellow: #FFFF00;
+$green: #7FFF00;
+$blue: #0000FF;
+$light-blue: #007FFF;
+$dark-blue: #3D518F;
+$cyan: #00FFFF;
+$purple: #7F00FF;
+$magenta: #FF00FF;
+
+$color_apple_approx: #33b233;
+$color_alto_approx: #dcdcdc;
+$color_cerulean_approx: #038be1;
+$color_cod_gray_approx: #080808;
+$color_cararra_approx: #ebebeb;
+$color_celeste_approx: #cccccc;
+$color_chicago_approx: #5e5e5e;
+$color_calypso_approx: #31708f;
+$color_chelsea_cucumber_approx: #8bbf61;
+$color_cumulus_approx: #fffcd5;
+$color_jungle_green_approx: #26a69a;
+$color_tuna_approx: #313946;
+$color_pumice_approx: #c7c8ca;
+$color_gray_approx: #7c8082;
+$color_pink_swan_approx: #bbb;
+$color_mountain_mist_approx: #999;
+$color_nobel_approx: rgb(180, 180, 180);
+$color_gallery_approx: #eee;
+$color_forest_green_approx: #159238;
+$color_gold_10_approx: rgba(255, 210, 0, 0.1);
+$color_gold_30_approx: rgba(255, 210, 0, 0.3);
+$color_mine_shaft_approx: #313131;
+$color_mystic_approx: #e4ecf7;
+$color_boston_blue_approx: #428bca;
+$color_elm_approx: #1c7d74;
+$color_wild_sand_approx: #f5f5f5;
+$color_star_dust_approx: #9e9e9e;
+$color_mercury_approx: #e2e9e6;
+$color_fuscous_gray_approx: #544f4e;
+$color_san_juan_approx: #245269;
+$color_silver_approx: #bdbdbd;
+$color_tapa_approx: #777777;
+$color_ice_cold_approx: #acece6;
+$color_sprout_approx: #c0dcaa;
+$color_pine_glade_approx: #b3d597;
+$color_link_water_approx: #d9edf7;
+$color_tropical_blue_approx: #c4e3f3;
+$color_driftwood_approx: #ab7a4b;
+$color_santa_fe_approx: #a77749;
+$color_well_read_approx: #bd362f;
+$color_roof_terracotta_approx: #a9302a;
+$color_burnt_umber_approx: #942a25;
+$color_wafer_approx: #dacdcd;
+$color_japanese_laurel_approx: green;
+$color_snowy_mint_approx: #ccface;
+$color_tahuna_sands_approx: #f2efca;
+$color-brand: #999999;
+$color-theme: #222222;
+$color-link: $dark-blue;
+
+// A simple theme switcher
+// ====================================================================
+
+@if $color-theme == #222222 {
+    $color-brand: #222222;
+}
+@else if $color-theme == #999999 {
+    $color-brand: #ff9900;
+}
+
+$theme-complement: complement($color-theme);
+$theme-invert: invert($color-theme);
+$theme-adjust: adjust-hue($color-theme, 90deg);
+$theme-shade: shade($color-theme, 20%);
+$theme-tint: tint($color-theme, 20%);
+
+// Mixin variables
+// ====================================================================
+//
+$defined-bs-type: border-box !default;
+
+// Breakpoint variables
+// ====================================================================
+
+// roughly speaking, around 288px wide with 16px body font
+$XS: 18em;
+
+// roughly speaking, around 480px wide with 16px body font
+$S: 30em;
+
+// roughly speaking, around 688px wide with 16px body font
+$M: 43em;
+
+// roughly speaking, around 912px wide with 16px body font
+$L: 57em;
+
+// Default values for text-shadow mixin
+// ====================================================================
+
+$default-text-shadow-color: darken($white, 20%);
+$default-text-shadow-blur: 0px;
+$default-text-shadow-v-offset: 4px;
+$default-text-shadow-h-offset: 3px;
+
+// Default values for box-shadow mixin
+// ====================================================================
+
+$default-box-shadow-color: lighten($black, 50%);
+$default-box-shadow-h-offset: 1px;
+$default-box-shadow-v-offset: 1px;
+$default-box-shadow-blur: 2px;
+$default-box-shadow-spread: false;
+$default-box-shadow-inset: false;
+
+// Default value for border-radius
+// ====================================================================
+
+$default-border-radius: 5px;
+
+// Default value for Base Font Sizes
+// ====================================================================
+
+$base-font-size: 14px !default;
+$large-font-size: ceil(($base-font-size * 1.25)) !default;
+$small-font-size: ceil(($base-font-size * 0.85)) !default;

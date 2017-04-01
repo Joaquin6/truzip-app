@@ -1,0 +1,82 @@
+<div class="nano-content">
+	<div class="PropertyDetailsWhy"></div>
+	<div id="HelpMeBargain">
+		<h6>Help Me Bargain</h6>
+		<p>
+			Use Help Me Bargain To Calculate How Much To Pay For Your Home.
+			<br />
+			<br />
+			We Look At Comparable Homes in Your Search Area + Supply/Demand Characteristics to Generate Offer Price Ranges.
+		</p>
+		<div id="mktavgcontrol" runat="server" style="float: left; margin-top: 20px; width: 100%;">
+			<table class="Left">
+				<tr>
+					<td>
+					<div style="margin-left: 50px; margin-bottom: 20px; width: 400px;">
+						<div id="mktlistingmarker" runat="server" class="MarketMarker {{ MarketMarkerType }}" >
+							{{ Price }}
+						</div>
+						<div class="MarketAverageGraph"></div>
+						<table>
+							<tr>
+								<td width="125">
+								<div id="mktbadmarker" runat="server" class="MarketGoodMarker">
+									{{ HelpMeBargainHigh }}
+								</div></td>
+								<td width="95"></td>
+								<td width="125">
+								<div id="mktgoodmarker" runat="server" class="MarketBadMarker">
+									{{ HelpMeBargainLow }}
+								</div></td>
+							</tr>
+						</table>
+					</div></td>
+
+				</tr>
+
+			</table>
+			<div class="clear"></div>
+			<div class="Font13">
+				<table>
+					<tr>
+						<td width="250px;">Listing Price: </td>
+						<td>
+						<div runat="server" class="bold">
+							{{ Price }}
+						</div></td>
+					</tr>
+					<tr>
+						<td >Valuation: </td>
+						<td>
+						<div class="bold">
+							{{ ValuationPrice }}
+						</div></td>
+					</tr>
+					<tr height="10px"></tr>
+					<tr>
+						<td >Suggested Offer Price: </td>
+						<td>
+						<div class="bold">
+							{{ SuggestedOffer }}
+						</div></td>
+					</tr>
+					<tr>
+						<td>Market Type in ZipCode:</td>
+						<td>
+						<div class="bold">
+							{{ MarketType }}
+						</div></td>
+					</tr>
+
+				</table>
+			</div>
+			<div class="clear"></div>
+			<br />
+			<div>
+				* Based on Internal TruZip Data
+			</div>
+			<br />
+			<br />
+		</div>
+	</div>
+</div>

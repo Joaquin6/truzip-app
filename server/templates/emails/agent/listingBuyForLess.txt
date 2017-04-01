@@ -1,0 +1,31 @@
+Hi, {{ agentName }}!
+
+Below are your lead details:
+===========================================================================
+Email address of your lead: {{ email }}.
+Search Area: {{ city }}.
+===========================================================================
+The consumer registered on the Truzip website with this email address and 
+recently sent a message to be contacted by a Truzip Premier Agent.
+===========================================================================
+The consumer is very interested in buying a property with Truzip.
+===========================================================================
+Here is the text which caused the consumer to give us thier email.
+
+"Below Market" homes are few and sell fast. They are typically priced low 
+due to the seller needing to move or as part of a distress sale.
+
+Our local agents alert you on these "deals" for free. They even return part
+of thier comission to you, reducing your total cost further.
+===========================================================================
+We suggest you respond as soon as possible. Mention you are a Truzip premier
+agent.
+Provide a hook as to how you differentiate amongst other agents.
+Immediate responses are 500% more effective.
+===========================================================================
+We will continue to send you emails as the consumer interacts further.
+===========================================================================
+If you have any questions, please email us at info@truzip.com.
+===========================================================================
+Best,
+Truzip Team

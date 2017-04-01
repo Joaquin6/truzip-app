@@ -1,0 +1,34 @@
+<div class="nano-content">
+	<div style="margin-bottom: 6px; font-weight: bold;">{{ Address }}</div>
+	<table width="100%">
+		<tr>
+			<td class="DetailsDataTableValue ColumnLine">{{ PropertyType }}</td>
+			<td class="DetailsDataTableValue ColumnLine">{{ Bedrooms }}</td>
+			<td class="DetailsDataTableValue ColumnLine">{{ BathroomsFull }}</td>
+			<td class="DetailsDataTableValue ColumnLine">{{ LivingArea }}</td>
+			<td class="DetailsDataTableValue ColumnLine">{{ LotSize }}</td>
+			<td class="DetailsDataTableValue">{{ YearBuilt }}</td>
+		</tr>
+		<tr>
+			<td class="DetailsDataTable ColumnLine">Type</td>
+			<td class="DetailsDataTable ColumnLine">Beds</td>
+			<td class="DetailsDataTable ColumnLine">Bath</td>
+			<td class="DetailsDataTable ColumnLine">Sq.Ft</td>
+			<td class="DetailsDataTable ColumnLine">Lot Size</td>
+			<td class="DetailsDataTable">Year Built</td>
+		</tr>
+	</table>
+	<div class="accordion" id="accordionPropDesc">
+		<div class="accordion-group">
+			<p id="DetailsDesc" style="margin-top: 20px;">
+				{{ Description }}
+			</p>
+			<div id="CollapseDesc" class="accordion-body collapse">
+				<p class="accordion-inner" style="margin-top: 20px;">
+					{{ LongDescription }}
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="PropertyDetailsWhy"></div>
+</div>

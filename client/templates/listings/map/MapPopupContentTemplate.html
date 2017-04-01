@@ -1,0 +1,37 @@
+<div class="row" style="width:175px;">
+	<div class="col-xs-6">
+		{[ if (thumbnail) { ]}
+			<img src="{{ thumbnail }}" alt="{{ imgAltDesc }}" width="80" height="80"/>
+		{[ } else { ]}
+			<img src="/images/ListingsSidebarHouse.png" alt="{{ imgAltDesc }}" width="80" height="80"/>
+		{[ } ]}
+	</div>
+	<div class="col-xs-6" style="white-space: nowrap;">
+		{[ if (dealtype == 2 || dealtype == 3) { ]}
+			<b>Save: {{ yousave }}</b><br>
+		{[ } ]}
+		{[ if (bedrms && bathrms) { ]}
+			{{ bedrms }} bd, {{ bathrms }} ba<br>
+		{[ } else if (!bedrms && bathrms) { ]}
+			{[ if (bathrms > 1) { ]}
+				{{ bathrms }} bathrooms<br>
+			{[ } else if (bathrms === 1) { ]}
+				{{ bathrms }} bathroom<br>
+			{[ } ]}
+		{[ } else if (bedrms && !bathrms) { ]}
+			{[ if (bedrms > 1) { ]}
+				{{ bedrms }} bedrooms<br>
+			{[ } else if (bedrms === 1) { ]}
+				{{ bedrms }} bedroom<br>
+			{[ } ]}
+		{[ } ]}
+		Price: {{ price }}<br>
+		{[ if (totalPotentialImgs) { ]}
+			{[ if (totalPotentialImgs > 1) { ]}
+				{{ totalPotentialImgs }} Photos
+			{[ } else if (totalPotentialImgs === 1) { ]}
+				{{ totalPotentialImgs }} Photo
+			{[ } ]}
+		{[ } ]}
+	</div>
+</div>

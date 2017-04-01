@@ -1,0 +1,31 @@
+Hi, {{ agentName }}!
+
+Your existing lead: {{ email }}.
+Requested Property Info on: {{ Address }}.
+===========================================================================
+  Please respond immediately to the lead. Mention if the property is still available and if they would like to see it. If not available, mention there are similar homes you can show them. The details below were sent to the consumer already.
+===========================================================================
+Additional Details on the Property:
+{[ if (Bedrooms && BathroomsFull) { ]}
+    The home has {{ Bedrooms }} bedrooms and {{ BathroomsFull }} full bathrooms.
+{[ } else if (!Bedrooms && BathroomsFull) { ]}
+    The home has {{ BathroomsFull }} full bathrooms.
+{[ } else if (Bedrooms && !BathroomsFull) { ]}
+    The home has {{ Bedrooms }} bedrooms.
+{[ } ]}
+Property was built in {{ YearBuilt }}.
+
+Home Description:
+{{ Description }}.
+===========================================================================
+
+===========================================================================
+{[ if (email) { ]}
+    This email was intended for {{ email }}.
+{[ } ]}
+
+If you have any questions, please email us at info@truzip.com.
+===========================================================================
+
+Thank You,
+Your friends at Truzip.com

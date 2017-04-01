@@ -1,0 +1,96 @@
+{{ mainHeader }}
+<div {{ inline_mainBody }}>
+    <h1 {{ inline_h1 }}>Requested Property Details</h1>
+    <h2 {{ inline_h2 }}>Your Lead Requested More Information About</h2>
+    <h2 {{ inline_h2 }}>{{ Address }}</h2>
+    <h2 {{ inline_h2 }}>Lead's Email: <a href="mailto:{{ email }}">{{ email }}</a>.</h2>
+    <h5> Please respond immediately to the lead. Mention if the property is still available and if they would like to see it. If not available, mention there are similar homes you can show them. The details below were sent to the consumer already.</h5>
+    <table width="100%"  style="line-height: 30px;">
+        <tr {{ inline_GridAlterBg }}>
+            <td {{ inline_DetailsDataTable }}>Deal Type</td>
+            <td {{ inline_DetailsDataTable }}>Price</td>
+            <td {{ inline_DetailsDataTable }}>TruZip Valuation</td>
+            {[ if (!isAboveMarket) { ]}
+                <td {{ inline_DetailsDataTable }}>You Save</td>
+            {[ } ]}
+        </tr>
+        <tr>
+            <td {{ inline_DetailsDataTableValue }}>{{ DealType }}</td>
+            <td {{ inline_DetailsDataTableValue }}>{{ Price }}</td>
+            <td {{ inline_DetailsDataTableValue }}>{{ ValuationPrice }}</td>
+            {[ if (!isAboveMarket) { ]}
+                <td {{ inline_DetailsDataTableValue }}>{{ YouSave }}</td>
+            {[ } ]}
+        </tr>
+    </table>
+    <div {{ inline_propertyImage }}></div>
+    <h3 {{ inline_h3 }}>
+        {[ if (isAboveMarket) { ]}
+            This property is {{ DealType }}
+        {[ } else { ]}
+            This property is a {{ DealType }}. You save a total of {{ YouSave }}.
+        {[ } ]}
+    </h3>
+    <h4 {{ inline_h4 }}>There are {{ ComparableCount }} Comparable Houses for Sale in This Zipcode. See Below How "This House" Compares to them.</h4>
+    <table width="100%"  style="line-height: 30px;">
+        <tr {{ inline_GridAlterBg }}>
+            <td {{ inline_DetailsDataTable }}></td>
+            <td {{ inline_DetailsDataTableAlterSelected }}>This House</td>
+            <td {{ inline_DetailsDataTable }}>Comparables</td>
+            <td {{ inline_DetailsDataTable }}> Difference</td>
+        </tr>
+        <tr>
+            <td {{ inline_DetailsDataTable }}>Price/sqft</td>
+            <td {{ inline_DetailsDataTableValueTableSelected }}>{{ PricePerSqFt }}</td>
+            <td {{ inline_DetailsDataTableValue }}>{{ MedianPpsf }}</td>
+            <td {{ inline_DetailsDataTableValue }}>{{ PpsfDiff }}</td>
+        </tr>
+        <tr {{ inline_GridAlterBg }}>
+            <td {{ inline_DetailsDataTable }}>Age</td>
+            <td {{ inline_DetailsDataTableValueAlterSelected }}>{{ YearBuilt }}</td>
+            <td {{ inline_DetailsDataTableValue }}>{{ MedianYearBuilt }}</td>
+            <td {{ inline_DetailsDataTableValue }}>{{ YearBuiltDiff }}</td>
+        </tr>
+        {[ if (LotSize) { ]}
+            <tr>
+                <td {{ inline_DetailsDataTable }}>Lot size</td>
+                <td {{ inline_DetailsDataTableValueTableSelected }}>{{ LotSize }}</td>
+                {[ if (MedianLotSize) { ]}
+                    <td {{ inline_DetailsDataTableValue }}>{{ MedianLotSize }}</td>
+                {[ } else { ]}
+                    <td {{ inline_DetailsDataTableValue }}>N/A</td>
+                {[ } ]}
+                {[ if (LotSizeDiff) { ]}
+                    <td {{ inline_DetailsDataTableValue }}>{{ LotSizeDiff }}</td>
+                {[ } else { ]}
+                    <td {{ inline_DetailsDataTableValue }}>N/A</td>
+                {[ } ]}
+            </tr>
+        {[ } ]}
+        {[ if (Bedrooms && BathroomsFull) { ]}
+            <tr {{ inline_GridAlterBg }}>
+                <td {{ inline_DetailsDataTable }}>Bed/Bath</td>
+                <td {{ inline_DetailsDataTableValueAlterSelected }}>{{ Bedrooms }}/{{ BathroomsFull }}</td>
+                <td {{ inline_DetailsDataTableValue }}>{{ MedianBedrooms }}/{{ MedianBathrooms }}</td>
+                <td {{ inline_DetailsDataTableValue }}>{{ BedroomsDiff }}/{{ BathroomsDiff }}</td>
+            </tr>
+        {[ } else if (!Bedrooms && BathroomsFull) { ]}
+            <tr {{ inline_GridAlterBg }}>
+                <td {{ inline_DetailsDataTable }}>Bathrooms</td>
+                <td {{ inline_DetailsDataTableValueAlterSelected }}>{{ BathroomsFull }}</td>
+                <td {{ inline_DetailsDataTableValue }}>{{ MedianBathrooms }}</td>
+                <td {{ inline_DetailsDataTableValue }}>{{ BathroomsDiff }}</td>
+            </tr>
+        {[ } else if (Bedrooms && !BathroomsFull) { ]}
+            <tr {{ inline_GridAlterBg }}>
+                <td {{ inline_DetailsDataTable }}>Bedrooms</td>
+                <td {{ inline_DetailsDataTableValueAlterSelected }}>{{ Bedrooms }}</td>
+                <td {{ inline_DetailsDataTableValue }}>{{ MedianBedrooms }}</td>
+                <td {{ inline_DetailsDataTableValue }}>{{ BedroomsDiff }}</td>
+            </tr>
+        {[ } ]}
+    </table>
+    <h3 {{ inline_h3 }}>Property Description</h3>
+    <h4 {{ inline_h4 }}>{{ Description }}</h4>
+    {{ mainFooter }}
+</div>

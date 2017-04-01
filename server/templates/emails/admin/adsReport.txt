@@ -1,0 +1,13 @@
+################ Daily Ads Report ################
+
+This report contains all ACTIVE agents in our DB, with ACTIVE
+Subscriptions that are requiring leads in order to be satisfied.
+
+Run Ads for these Agents
+
+{[ _.each(agentTextList, function (agentText) { ]}
+	------------- Agent Details -------------
+		{{ agentText }}
+{[ }); ]}
+
+{{ typeOfData }}

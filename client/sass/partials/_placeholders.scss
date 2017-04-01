@@ -1,0 +1,314 @@
+// ====================================================================
+// Placeholder styles - these only get generated into the CSS if they are extended elsewhere
+// For example: @extend %clearfix;
+// ====================================================================
+
+%clearfix {
+    @include clearfix;
+}
+
+%remove-margin-top {
+    margin-top: 0;
+}
+
+%single-transition {
+    @include single-transition(all, 0.3s, ease-in-out, 0s);
+}
+
+%font-sans {
+    font-family: $font_open_sans, $font_sans-serif;
+}
+
+%fl {
+    float: left;
+}
+
+%fr {
+    float: right;
+}
+
+%block {
+    display: block;
+}
+
+%margin0 {
+    margin: 0;
+}
+
+%pad-top-bottom {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+%headline-text-shadow {
+    @include single-text-shadow;
+}
+
+%rounded {
+    @include border-radius;
+}
+
+%round-tr {
+    @include border-top-right-radius(5px);
+}
+
+%round-br {
+    @include border-bottom-right-radius(5px);
+}
+
+%round-bl {
+    @include border-bottom-left-radius(5px);
+}
+
+%round-tl {
+    @include border-top-left-radius(5px);
+}
+
+%round-top {
+    // top left and top right
+    @include border-top-radius(5px);
+}
+
+%round-right {
+    // top right and bottom right
+    @include border-right-radius(5px);
+}
+
+%round-bottom {
+    // bottom right and bottom left
+    @include border-bottom-radius(5px);
+}
+
+%round-left {
+    // bottom left and bottom right
+    @include border-left-radius(5px);
+}
+
+%pos-rel {
+    position: relative;
+}
+
+%pos-abs {
+    position: absolute;
+}
+
+%header_1 {
+    @include header-titles($black, 18px, $font_lanenar);
+}
+
+%header_2 {
+    @include header-titles($black, 32px, $font_lanenar);
+}
+
+%header_3 {
+    @include header-titles($color_cerulean_approx, 30px, $font_lanenar);
+    margin-top: 30px;
+}
+
+%header_4 {
+    @include header-titles($color_tuna_approx, 24px, $font_lanenar);
+    line-height: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+%header_5 {
+    @include header-titles($color_pumice_approx, 50px, $font_lanenar);
+    margin-top: 0;
+}
+
+%header_6 {
+    @include header-titles($color_tuna_approx, 24px, $font_lanenar);
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+//@extend-elements
+//original selectors
+//.social-icons li a, a.social-icon
+%extend_1 {
+    width: 28px;
+    height: 28px;
+    display: block;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+
+    @include single-transition(all 0.3s ease-in-out, 0s);
+
+    @include border-radius(50% !important);
+}
+
+//original selectors
+//.loginbar li a, .loginbar li a:hover
+%extend_2 {
+    color: $color_gray_approx;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-family: $font_open_sans, $font_sans-serif;
+}
+
+//original selectors
+//.navbar-static-top, .navbar-fixed-top, .navbar-fixed-bottom
+%extend_3 {
+    @include border-radius(0px);
+
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+//original selectors
+//#mobile-footser-end span.glyphicon, #mobile-footser-end .col-xs-8 p
+%extend_4 {
+    padding: 5px 10px;
+    color: $black;
+    height: 50px;
+    top: 16px;
+    text-align: right;
+}
+
+//original selectors
+//span.twitter-typeahead .tt-suggestion >p:hover, span.twitter-typeahead .tt-suggestion >p:focus
+%extend_5 {
+    color: $white;
+    text-decoration: none;
+    outline: 0;
+    background-color: $color_boston_blue_approx;
+}
+
+//original selectors
+//.map-overlay, .navbar-map-overlay
+%extend_6 {
+    background-color: $white_90;
+    border-color: $color_mercury_approx;
+
+    @include box-shadow(0 3px 5px -3px $black_15);
+}
+
+//original selectors
+//a.list-group-item:hover, a.list-group-item:focus
+%extend_7 {
+    text-decoration: none;
+    color: $color_fuscous_gray_approx;
+    background-color: $color_wild_sand_approx;
+}
+
+//original selectors
+//.list-group-item.disabled, .list-group-item.disabled:hover, .list-group-item.disabled:focus
+%extend_8 {
+    background-color: $color_gallery_approx;
+    color: $color_tapa_approx;
+    cursor: not-allowed;
+}
+
+//original selectors
+//.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus
+%extend_9 {
+    z-index: 2;
+    color: $white;
+    background-color: $color_jungle_green_approx;
+    border-color: $color_jungle_green_approx;
+}
+
+//original selectors
+//a.list-group-item-success.active, a.list-group-item-success.active:hover, a.list-group-item-success.active:focus
+%extend_10 {
+    color: $white;
+    background-color: $color_chelsea_cucumber_approx;
+    border-color: $color_chelsea_cucumber_approx;
+}
+
+//original selectors
+//a.list-group-item-info.active, a.list-group-item-info.active:hover, a.list-group-item-info.active:focus
+%extend_11 {
+    color: $white;
+    background-color: $color_calypso_approx;
+    border-color: $color_calypso_approx;
+}
+
+//original selectors
+//a.list-group-item-warning.active, a.list-group-item-warning.active:hover, a.list-group-item-warning.active:focus
+%extend_12 {
+    color: $white;
+    background-color: $color_driftwood_approx;
+    border-color: $color_driftwood_approx;
+}
+
+//original selectors
+//a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus
+%extend_13 {
+    color: $white;
+    background-color: $color_well_read_approx;
+    border-color: $color_well_read_approx;
+}
+
+//original selectors
+//#Map, #PropertyDetailsMap
+%extend_14 {
+    @extend %pos-rel;
+
+    height: 100%;
+    width: 100%;
+}
+
+//original selectors
+//.icon-alarm-clock:before, .icon-baby-monitor:before, .icon-bar-stool:before, .icon-bed:before, .icon-book-shelf:before, .icon-broom:before, .icon-cabinet:before, .icon-chair-1:before, .icon-chair-2:before, .icon-crib:before, .icon-dish-washer:before, .icon-door-key:before, .icon-door:before, .icon-fence:before, .icon-garbage-can:before, .icon-garden-rake:before, .icon-garden-spade:before, .icon-gate:before, .icon-globe:before, .icon-home-1:before, .icon-home-2:before, .icon-home-fill-1:before, .icon-hung-picture:before, .icon-lamp-1:before, .icon-lamp-2:before, .icon-lamp-3:before, .icon-light-bulb:before, .icon-light-fixture:before, .icon-light-switch:before, .icon-microwave:before, .icon-pain-can:before, .icon-paint-brush:before, .icon-paint-roller:before, .icon-plug-fill:before, .icon-plug:before, .icon-plunger:before, .icon-recycle:before, .icon-refrigerator-1:before, .icon-refrigerator-2:before, .icon-shovel:before, .icon-soap-bottle:before, .icon-sofa-chair:before, .icon-stove-top:before, .icon-stove-vent:before, .icon-swing:before, .icon-table-1:before, .icon-table-2:before, .icon-thermostat:before, .icon-toilet:before, .icon-washer-dryer:before, .icon-window-1:before, .icon-window-2:before, .icon-window-3:before
+%extend_15 {
+    font-family: $font_picto_foundry_household;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    @include inline-block();
+    text-decoration: inherit;
+}
+
+//original selectors
+//.icon-add-symbol:before, .icon-address-book:before, .icon-alert:before, .icon-app-icon:before, .icon-battery-full:before, .icon-battery-low:before, .icon-bell-fill:before, .icon-bell:before, .icon-bin:before, .icon-bluetooth-thick:before, .icon-bluetooth:before, .icon-bookmark:before, .icon-briefcase-1:before, .icon-briefcase-2:before, .icon-browser-check:before, .icon-browser-heart:before, .icon-browser-location:before, .icon-browser-star:before, .icon-browser:before, .icon-building:before, .icon-bulleted-list:before, .icon-calendar-1:before, .icon-calendar-2:before, .icon-cancel:before, .icon-categories:before, .icon-checkmark-thick:before, .icon-checkmark:before, .icon-cigarette:before, .icon-circle-delete:before, .icon-cloud-download:before, .icon-cloud-upload:before, .icon-collage:before, .icon-comment-1:before, .icon-comment-2:before, .icon-comment-add:before, .icon-comment-fill-1:before, .icon-comment-fill-2:before, .icon-comment-heart-2:before, .icon-comment-heart-fill:before, .icon-comment-heart:before, .icon-comment-star-fill:before, .icon-comment-star:before, .icon-comment-typing:before, .icon-compose:before, .icon-computer-mouse:before, .icon-connection:before, .icon-contrast:before, .icon-copyright:before, .icon-crop-tool:before, .icon-cross-fill:before, .icon-cross:before, .icon-crossing:before, .icon-crown:before, .icon-delete-bin:before, .icon-delete-symbol:before, .icon-dial-pad:before, .icon-document-add:before, .icon-document-bar:before, .icon-document-blank-fill:before, .icon-document-blank:before, .icon-document-check:before, .icon-document-delete:before, .icon-document-heart:before, .icon-document-line:before, .icon-document-open:before, .icon-document-sub:before, .icon-documents-bar:before, .icon-documents-check:before, .icon-documents-fill:before, .icon-documents-heart:before, .icon-documents-line:before, .icon-documents:before, .icon-download-1:before, .icon-download-2:before, .icon-download-all:before, .icon-easel:before, .icon-envelope-1:before, .icon-envelope-2:before, .icon-envelope-3:before, .icon-envelope-fill-1:before, .icon-factory:before, .icon-file-box:before, .icon-filing-cabinet:before, .icon-flag-1:before, .icon-flag-2:before, .icon-floppy-disk:before, .icon-folder-add:before, .icon-folder-check:before, .icon-folder-delete:before, .icon-folder-fill:before, .icon-folder-open:before, .icon-folder-sub:before, .icon-folder:before, .icon-ghost:before, .icon-graduation:before, .icon-group:before, .icon-hammer:before, .icon-high-definition:before, .icon-hour-glass:before, .icon-identification:before, .icon-inbox-1:before, .icon-inbox-2:before, .icon-inbox-3:before, .icon-inbox-fill-1:before, .icon-inbox-fill-2:before, .icon-information:before, .icon-link:before, .icon-location-pin:before, .icon-lock-fill:before, .icon-lock:before, .icon-manager:before, .icon-minus-symbol:before, .icon-mirror:before, .icon-new-window:before, .icon-newspaper:before, .icon-note-pad:before, .icon-outbox-fill:before, .icon-outbox:before, .icon-paint-brushes:before, .icon-paint-palette:before, .icon-paper-document-image:before, .icon-paper-document:before, .icon-paper-documents-image:before, .icon-paper-documents:before, .icon-paper-stack:before, .icon-paperclip:before, .icon-path-tool:before, .icon-phone-fill:before, .icon-phone:before, .icon-plane-fill:before, .icon-plane:before, .icon-power-on:before, .icon-presentation:before, .icon-printer:before, .icon-projector-screen-bar:before, .icon-projector-screen-line:before, .icon-projector-screen:before, .icon-quotes:before, .icon-rook:before, .icon-ruler:before, .icon-save:before, .icon-scissors:before, .icon-scope:before, .icon-search-add:before, .icon-search-sub:before, .icon-search:before, .icon-server:before, .icon-settings-wheel-fill:before, .icon-settings-wheel:before, .icon-share:before, .icon-shield:before, .icon-signal:before, .icon-sliders:before, .icon-star-of-david:before, .icon-task-check:before, .icon-think-bubbles:before, .icon-tic-tac-toe:before, .icon-time-clock:before, .icon-trash-can:before, .icon-unlock-fill:before, .icon-unlock:before, .icon-upload:before, .icon-usb:before, .icon-user-1:before, .icon-user-2:before, .icon-venn-diagram:before, .icon-view-more-fill:before, .icon-view-more:before, .icon-wifi-1:before, .icon-wifi-2:before, .icon-wrench-fill:before, .icon-wrench:before
+%extend_16 {
+    font-family: $font_picto_foundry_general;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    @include inline-block();
+    text-decoration: inherit;
+}
+
+//original selectors
+//.ui-input-text, .ui-input-search
+%extend_17 {
+    margin: .5em 2.75em;
+    border-width: 2px;
+    border-style: solid;
+}
+
+//original selectors
+//.media-clearfix-sm >.pull-left, .media-clearfix-sm >.pull-right, .media-clearfix-sm >.media-left, .media-clearfix-sm >.media-right
+%extend_18 {
+    float: none !important;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-left: 0;
+    margin-right: 0;
+    display: block;
+    height: auto !important;
+    padding: 0 !important;
+}
+
+//original selectors
+//.media-clearfix-xs >.pull-left, .media-clearfix-xs >.pull-right, .media-clearfix-xs >.media-left, .media-clearfix-xs >.media-right
+%extend_19 {
+    margin-bottom: 0;
+    float: none !important;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-left: 0;
+    margin-right: 0;
+    display: block;
+    height: auto !important;
+    padding: 0 !important;
+}

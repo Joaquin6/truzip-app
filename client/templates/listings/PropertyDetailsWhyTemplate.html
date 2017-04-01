@@ -1,0 +1,37 @@
+<h6>{{ DealTypeTitle }}</h6>
+<p >
+	There are <span>{{ ComparableCount }}</span> Comparable Houses for Sale in This Zipcode. See Below How “This House” Compares
+	to them.
+</p>
+<table width="100%"  style="line-height: 30px;">
+	<tr class="GridAlterBg">
+		<td class="DetailsDataTable"></td>
+		<td class="DetailsDataTable TableAlterSelected">This House</td>
+		<td class="DetailsDataTable">Comparables</td>
+		<td class="DetailsDataTable">Difference</td>
+	</tr>
+	<tr>
+		<td class="DetailsDataTable">Price/sqft</td>
+		<td class="DetailsDataTableValue TableSelected">{{ PricePerSqFt }}</td>
+		<td class="DetailsDataTableValue">{{ MedianPpsf }}</td>
+		<td class="DetailsDataTableValue"> {{ PpsfDiff }}</td>
+	</tr>
+	<tr class="GridAlterBg">
+		<td class="DetailsDataTable">Age</td>
+		<td class="DetailsDataTableValue TableAlterSelected">{{ YearBuilt }}</td>
+		<td class="DetailsDataTableValue">{{ MedianYearBuilt }}</td>
+		<td class="DetailsDataTableValue"> {{ YearBuiltDiff }}</td>
+	</tr>
+	<tr>
+		<td class="DetailsDataTable">Lot size</td>
+		<td class="DetailsDataTableValue TableSelected">{{ LotSize }}</td>
+		<td class="DetailsDataTableValue">{{ MedianLotSize }}</td>
+		<td class="DetailsDataTableValue">{{ LotSizeDiff }}</td>
+	</tr>
+	<tr class="GridAlterBg">
+		<td class="DetailsDataTable">Bed/Bath</td>
+		<td class="DetailsDataTableValue TableAlterSelected">{{ Bedrooms }}/{{ BathroomsFull }}</td>
+		<td class="DetailsDataTableValue">{{ MedianBedrooms }}/{{ MedianBathrooms }}</td>
+		<td class="DetailsDataTableValue">{{ BedroomsDiff }}/{{ BathroomsDiff }}</td>
+	</tr>
+</table>

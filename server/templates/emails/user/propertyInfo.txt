@@ -1,0 +1,32 @@
+Thank You
+
+for inquiring about
+Property: {{ Address }}
+===========================================================================
+{[ if (!isAboveMarket) { ]}
+    On this property You Save {{ YouSave }}.
+{[ } else { ]}
+	We consider this property to be {{ DealType }}.
+{[ } ]}
+===========================================================================
+{[ if (Bedrooms && BathroomsFull) { ]}
+    The home has {{ Bedrooms }} bedrooms and {{ BathroomsFull }} full bathrooms.
+{[ } else if (!Bedrooms && BathroomsFull) { ]}
+    The home has {{ BathroomsFull }} full bathrooms.
+{[ } else if (Bedrooms && !BathroomsFull) { ]}
+    The home has {{ Bedrooms }} bedrooms.
+{[ } ]}
+Property was built in {{ YearBuilt }}.
+===========================================================================
+We suggest an offering amount of {{ SuggestedOffer }}.
+===========================================================================
+This zipcode is in a "Buyers Market" (more supply than demand).
+===========================================================================
+{{ Description }}.
+===========================================================================
+{[ if (email) { ]}
+    This email was intended for {{ email }}.
+{[ } ]}
+
+If you have any questions, please email us at info@truzip.com.
+===========================================================================

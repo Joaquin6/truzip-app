@@ -1,0 +1,107 @@
+// ====================================================================
+// All the Web fonts used in the project.
+// ====================================================================
+
+// Font Names
+// ====================================================================
+$font_lanenar: "lanenar";
+$font_picto_foundry_household: "picto-foundry-household";
+$font_picto_foundry_general: "picto-foundry-general";
+$font_proxima_nova: "proxima-nova";
+$font_sans-serif: "sans-serif";
+$font_open_sans: "Open Sans";
+$font_tahoma: "Tahoma";
+$font_garamond_premier_pro: "garamond-premier-pro";
+
+// Font File Sources
+// ====================================================================
+
+// EpoClassic Fonts File Sources
+$font_src_epoclassic_ttf: "EpoClassic/EpoClassic-Lig-webfont.ttf";
+$font_src_epoclassic_woff: "EpoClassic/EpoClassic-Lig-webfont.woff";
+$font_src_epoclassic_svg: "EpoClassic/EpoClassic-Lig-webfont.svg";
+$font_src_epoclassic_eot: "EpoClassic/EpoClassic-Lig-webfont.eot";
+
+// Font URLS
+// ====================================================================
+
+// EpoClassic URL Fonts
+$font_url_epoclassic_0: font-url($font_src_epoclassic_ttf);
+$font_url_epoclassic_1: font-url($font_src_epoclassic_woff);
+$font_url_epoclassic_2: font-url($font_src_epoclassic_svg);
+$font_url_epoclassic_3: font-url($font_src_epoclassic_eot);
+
+// PictoFoundry URL Fonts
+$font_url_picto_foundry_0: font-url("PictoFoundry/picto-foundry-household.eot");
+$font_url_picto_foundry_1: font-url("PictoFoundry/picto-foundry-household.eot?#iefix");
+$font_url_picto_foundry_2: font-url("PictoFoundry/picto-foundry-household.woff");
+$font_url_picto_foundry_3: font-url("PictoFoundry/picto-foundry-household.ttf");
+$font_url_picto_foundry_4: font-url("PictoFoundry/picto-foundry-household.svg#picto-foundry-household");
+$font_url_picto_foundry_5: font-url("PictoFoundry/picto-foundry-general.eot");
+$font_url_picto_foundry_6: font-url("PictoFoundry/picto-foundry-general.eot?#iefix");
+$font_url_picto_foundry_7: font-url("PictoFoundry/picto-foundry-general.woff");
+$font_url_picto_foundry_8: font-url("PictoFoundry/picto-foundry-general.ttf");
+$font_url_picto_foundry_9: font-url("PictoFoundry/picto-foundry-general.svg#picto-foundry-general");
+
+// Image URLS
+// ====================================================================
+
+// Images Root Directory
+$image_url_0: image-url("homePage.jpg");
+$image_url_1: image-url("house.jpg");
+$image_url_2: image-url("donars.jpg");
+$image_url_3: image-url("Best.png");
+$image_url_4: image-url("valid.png");
+$image_url_5: image-url("MarketAverageGraph.png");
+$image_url_6: image-url("modern-house.jpg");
+
+// Images Arrows Directory
+$image_url_arrows_0: image-url("arrows/arrow-left-black@2x.png");
+$image_url_arrows_1: image-url("arrows/arrow-left-white@2x.png");
+$image_url_arrows_2: image-url("arrows/arrow-right-black@2x.png");
+$image_url_arrows_3: image-url("arrows/arrow-right-white@2x.png");
+
+// Images Icons Directory
+$image_url_icons_0: image-url("icons/bedrooms.png");
+$image_url_icons_1: image-url("icons/bathrooms.png");
+$image_url_icons_2: image-url("icons/eye.png");
+$image_url_icons_3: image-url("icons/bedrooms@2x.png");
+$image_url_icons_4: image-url("icons/bathrooms@2x.png");
+
+// Images Mapicons Directory
+$image_url_mapicons_0: image-url("mapicons/not-loaded-map.jpg");
+$image_url_mapicons_1: image-url("mapicons/GoodDealTrimmedLegend.png");
+$image_url_mapicons_2: image-url("mapicons/FairDealTrimmedLegend.png");
+$image_url_mapicons_3: image-url("mapicons/RestDealTrimmedLegend.png");
+
+// Images Overlays Directory
+$image_url_overlays_0: image-url("overlays/02.png");
+
+// Images Social/icons Directory
+$image_url_social_icons_0: image-url("Social/icons/social/amazon.png");
+$image_url_social_icons_1: image-url("Social/icons/social/behance.png");
+$image_url_social_icons_2: image-url("Social/icons/social/blogger.png");
+$image_url_social_icons_3: image-url("Social/icons/social/deviantart.png");
+$image_url_social_icons_4: image-url("Social/icons/social/dribbble.png");
+$image_url_social_icons_5: image-url("Social/icons/social/dropbox.png");
+$image_url_social_icons_6: image-url("Social/icons/social/evernote.png");
+$image_url_social_icons_7: image-url("Social/icons/social/facebook.png");
+$image_url_social_icons_8: image-url("Social/icons/social/forrst.png");
+$image_url_social_icons_9: image-url("Social/icons/social/github.png");
+$image_url_social_icons_10: image-url("Social/icons/social/googleplus.png");
+$image_url_social_icons_11: image-url("Social/icons/social/jolicloud.png");
+$image_url_social_icons_12: image-url("Social/icons/social/last-fm.png");
+$image_url_social_icons_13: image-url("Social/icons/social/linkedin.png");
+$image_url_social_icons_14: image-url("Social/icons/social/picasa.png");
+$image_url_social_icons_15: image-url("Social/icons/social/pintrest.png");
+$image_url_social_icons_16: image-url("Social/icons/social/rss.png");
+$image_url_social_icons_17: image-url("Social/icons/social/skype.png");
+$image_url_social_icons_18: image-url("Social/icons/social/spotify.png");
+$image_url_social_icons_19: image-url("Social/icons/social/stumbleupon.png");
+$image_url_social_icons_20: image-url("Social/icons/social/tumblr.png");
+$image_url_social_icons_21: image-url("Social/icons/social/twitter.png");
+$image_url_social_icons_22: image-url("Social/icons/social/vimeo.png");
+$image_url_social_icons_23: image-url("Social/icons/social/wordpress.png");
+$image_url_social_icons_24: image-url("Social/icons/social/xing.png");
+$image_url_social_icons_25: image-url("Social/icons/social/yahoo.png");
+$image_url_social_icons_26: image-url("Social/icons/social/youtube.png");

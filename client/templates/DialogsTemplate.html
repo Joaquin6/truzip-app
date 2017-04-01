@@ -1,0 +1,290 @@
+<script id="tzDialogTitle" type="text/template">
+	<div class="popupTitle">{{ title }}</div>
+</script>
+<script id="tzDefaultDialogFooter" type="text/template">
+	<span>TRUZIP.COM</span>
+</script>
+
+<script id="ErrorDialogBody" type="text/template">
+	<div style="padding: 0px 20px 20px 20px;">
+	<h4 style="text-align: center;">{{ errorMessage }}</h4>
+	</div>
+</script>
+<script id="ErrorDialogFooter" type="text/template">
+	<button type="button" class="btn btn-default" data-dismiss="modal">
+	Close
+	</button>
+</script>
+
+<script id="EmailUsDialogTitle" type="text/template">
+	<h4 class="modal-title">{{ title }}</h4>
+</script>
+<script id="EmailUsDialogBody" type="text/template">
+	<form>
+	<div class="form-group">
+	<label for="message-text" class="control-label">Message:</label>
+	<textarea class="form-control" id="message-text"></textarea>
+	</div>
+	</form>
+</script>
+<script id="EmailUsDialogFooter" type="text/template">
+	<button type="button" class="btn btn-default" data-dismiss="modal">
+	Close
+	</button>
+	<button id="EmailUsSubmit" type="submit" class="btn btn-primary">
+	Send message
+	</button>
+</script>
+
+<script id="GetMoreInfoDialogTitle" type="text/template">
+	<div class="popupTitle">
+	<span class="bold">{{ title }}</span>
+	</div>
+</script>
+<script id="GetMoreInfoDialogBody" type="text/template">
+	<div style="padding: 0px 20px 20px 20px;">
+	<h4 style="text-align: center;">{{ body }}</h4>
+	<h4 style="text-align: center;">{{ conclusion }}</h4>
+	</div>
+</script>
+
+<script id="ContactAgentSubmittedDialogBody" type="text/template">
+	<div style="padding: 0px 20px 20px 20px;">
+	<h4 style="text-align: center;">Your ad will take effect within 24 hours. Thank you.</h4>
+	</div>
+</script>
+<script id="ContactAgentPurchasedDialogBody" type="text/template">
+	<div style="padding: 0px 20px 20px 20px;">
+	<h4 style="text-align: center;">Our payment system is under maintenance.</h4>
+	<h4 style="text-align: center;">Please try again later.</h4>
+	</div>
+</script>
+<script id="ContactAgentSubmittedDialogFooter" type="text/template">
+	<button type="button" class="btn btn-default" data-dismiss="modal">
+	Close
+	</button>
+</script>
+
+<script id="SellForDialogBody" type="text/template">
+	<div class="clear"></div>
+	<p>
+	Keep more of your equity. We partner with top local agents from brokerages like Remax, Coldwell, First Team, etc. to sell your home for 1% (as opposed to 2.5%). Agents are incentivized to sell your home for more than comparables.
+	</p>
+	<p>
+	We ensure your home is prominently displayed on all major sites like zillow, realtor, redfin, etc. with professional photos to attract the most buyers.
+	</p>
+	<br>
+	<div class="row">
+	<div class="col-md-6 col-md-offset-3 col-xs-8 col-xs-offset-2">
+	<p class="lead" style="text-align:center;">
+	Learn more, no obligation.
+	</p>
+	</div>
+	</div>
+</script>
+<script id="SellForDialogFooter" type="text/template">
+	<div class="row" >
+	<div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
+	<div class="input-group div-trans" style="margin: 14px 0px; margin-top:-30px">
+	<input id="DialogsSellForEmail" class="form-control inputPlaceholder" type="text" placeholder="Your Email" style="height: 34px;">
+	<span class="input-group-btn">
+	<button id="DialogsSellForSubmit" type="submit" class="btn btn-success btn-block btn-mini right">
+	SUBMIT
+	</button>
+	</span>
+	</div>
+	</div>
+	</div>
+</script>
+
+<script id="WhyBuyWithTruzipDialogBody" type="text/template">
+	<p>
+	"Below Market" homes are few and sell fast. They are typically priced low due to the seller needing to move or as part of a distress sale.
+	</p>
+	<p>
+	We alert you on these "deals" for free. We track your search - so we know the types of homes you like.
+	</p>
+	<br>
+	<div class="row">
+	<div class="col-md-8 col-md-offset-2 col-xs-8 col-xs-offset-2">
+	<p class="lead" style="text-align:center;">
+	Click Submit Below to Get Alerts.
+	</p>
+	</div>
+	</div>
+</script>
+<script id="WhyBuyWithTruzipDialogFooter" type="text/template">
+	<div class="row">
+	<div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
+	<div class="input-group div-trans" style="margin: 14px 0px; margin-top:-30px">
+	<input id="DialogsWhyBuyWithTruzipEmail" class="form-control inputPlaceholder" type="email" placeholder="Enter your email" style="height: 34px;">
+	<span class="input-group-btn">
+	<button id="DialogsWhyBuyWithTruzipSubmit" type="submit" class="btn btn-success btn-block btn-mini right">
+	SUBMIT
+	</button>
+	</span>
+	</div>
+	</div>
+	</div>
+</script>
+
+<script id="LargeImagesDialogTitle" type="text/template">
+	<h4 class="modal-title">{{ title }}</h4>
+</script>
+<script id="LargeImagesDialogBody" type="text/template">
+	<div class="panel panel-default">
+	<div class="panel-body" style="position:relative;padding: 0px;max-height: 460px;">
+	<div id="largeImagesSlider" style="padding: 0px; margin-bottom: 0px;">
+	{[ _.each(urls, function (url) { ]}
+	<div id="sliderimg">
+	<img src="{{ url }}"/>
+	</div>
+	{[ }); ]}
+	</div>
+	</div>
+	</div>
+</script>
+
+<script id="ContactAgentDialogTitle" type="text/template">
+	<div class="popupTitle">
+	<span>Get Up to </span><span class="bold" id="DialogsContactAgentCashback">{{ cashBack }}</span><span> on Close</span>
+	</div>
+</script>
+<script id="ContactAgentDialogBody" type="text/template">
+	<div>
+	<span>Contact Truzip Exclusive Agent </span>
+	</div>
+	<br>
+	<div class="form-group">
+	<table width="100%">
+	<tr >
+	<td class="GridTextLeft">Your Email</td>
+	<td >
+	<input id="DialogsContactAgentEmail" class="form-control inputPlaceholder" type="text" placeholder="" style="height: 34px;">
+	</td>
+	</tr>
+	<tr>
+	<td style="color: #35373b">.</td>
+	</tr>
+	<tr>
+	<td class="GridTextLeft">Message</td>
+	<td>
+	<textarea rows="4" class="GridTextLeft" style="width: 100%; color: black;" id="DialogsContactAgentText">{{ text }}</textarea>
+	</td>
+	</tr>
+	<tr>
+	<td style="color: #35373b">.</td>
+	</tr>
+	</table>
+	</div>
+	<div class="form-group">
+	<button  id="DialogsContactAgentSubmit" type="submit" class="btn btn-success btn-block btn-lg">
+	SEND REQUEST
+	</button>
+	</div>
+</script>
+
+<script id="ContactSalesDialogBody" type="text/template">
+	<div class="form-group">
+	<table width="100%">
+	<tr >
+	<td class="GridTextLeft">Your Email</td>
+	<td >
+	<input id="DialogsContactSalesEmail" class="form-control inputPlaceholder" type="text" placeholder="" style="height: 34px;">
+	</td>
+	</tr>
+	<tr>
+	<td style="color: #35373b">.</td>
+	</tr>
+	<tr>
+	<td class="GridTextLeft">Message</td>
+	<td>
+	<textarea rows="4" class="GridTextLeft inputPlaceholder" style="width: 100%; color: black;" id="DialogsContactSalesText" placeholder="Type message here"></textarea>
+	</td>
+	</tr>
+	<tr>
+	<td style="color: #35373b">.</td>
+	</tr>
+	</table>
+	</div>
+</script>
+
+<script id="SignInDialogTitle" type="text/template">
+	<div class="row text-center" style="padding: 0px 40px 0px 40px;">
+	<h2 style="text-align:center; margin-bottom: 0px;" ><b id='SignInTitle'></b></h2>
+	</div>
+</script>
+<script id="SiginDialogBody" type="text/template">
+	<div class="row text-center" style="padding: 0px 0px;">
+	<div id='SiginDealsBody'></div>
+	</div>
+</script>
+<script id="SiginDialogFooter" type="text/template">
+	<h2 style="text-align:center; margin: 0px 0px 20px 0px;" ><b>Join 5000+ Buyers and Investors.</b></h2>
+	<div class="row">
+	<div class="col-md-6 col-md-offset-3 col-xs-6 col-xs-offset-3">
+	<div class="input-group div-trans" style="margin-top: 0px;">
+	<input id="SignInEmail" class="form-control inputPlaceholder" type="email" placeholder="Enter your email here" style="height: 34px;">
+	<span class="input-group-btn">
+	<button id="SignInSubmit" type="submit" class="btn btn-success btn-block btn-mini right">
+	<span>See Deals</span><span style="margin-left: 10px; margin-top:-4px; font-size: 20px;" class="fa fa-angle-double-right"></span>
+	</button>
+	</span>
+	</div>
+	</div>
+	</div>
+	<div style="text-align: center; margin-top: 20px; margin-bottom: 20px;">
+	1-click sign-in. <span style="text-decoration: underline;">Completely</span> free.
+	</div>
+</script>
+
+<script id="WelcomeDialogTitle" type="text/template">
+	<div class="row text-center" style="padding-top: 10px; padding-bottom: 15px;">
+	<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+	<h3 class="welcomeToTruzipTitle">Welcome to Truzip</h3>
+	<hr style="height: 1px;background-color: gray;"/>
+	<h2 class="welcomeToTruzipSubtitle">We find you <b>deals</b> in every zipcode</h2>
+	</div>
+	</div>
+</script>
+<script id="WelcomeDialogBody" type="text/template">
+	<div class="row text-center" style="padding:0px 24px 0px 25px;"><div id='WelcomeBody'></div></div>
+</script>
+<script id="WelcomeDialogCloseButton" type="text/template">
+	<div class="row text-center" style="padding-top: 5px; padding-bottom: 5px;">
+	<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+	<button style="width: 200px;" class="center-block btn btn-success btn-block btn-lg" data-dismiss="modal" aria-label="Close" data-bypass>
+	Close
+	</button>
+	</div>
+	</div>
+</script>
+
+<script id="GetDealAlertsDialogTitle" type="text/template">
+	<div class="popupTitle">
+	<span>Get </span>{{ cityname }}<span> Deal Alerts</span>
+	</div>
+</script>
+<script id="GetDealAlertsDialogBody" type="text/template">
+	<div class="row">
+	<div class="col-md-6 col-md-offset-3 col-xs-8 col-xs-offset-2">
+	<p class="lead" style="text-align:center;">
+	Get Started. No Obligation
+	</p>
+	</div>
+	</div>
+</script>
+<script id="GetDealAlertsDialogFooter" type="text/template">
+	<div class="row">
+	<div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
+	<div class="input-group div-trans" style="margin: 14px 0px;">
+	<input id="GetDealsAlertsEmail" type="email" class="form-control inputPlaceholder" placeholder="Enter Email" style="height: 34px;">
+	<span class="input-group-btn">
+	<button id="GetDealsAlertsSubmit" type="submit" class="btn btn-success btn-block btn-mini right">
+	SUBMIT
+	</button>
+	</span>
+	</div>
+	</div>
+	</div>
+</script>

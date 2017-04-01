@@ -1,0 +1,135 @@
+<div class="container">
+	<div class="row">
+		<div class="jumbotron">
+			<h1>Welcome, {{ firstName }}!</h1>
+			<p>
+				Thank you for subscribing with Truzip. Below are the details on your subscription.
+				<br>
+				We're looking forward to bringing you more home buyers.
+			</p>
+			<br>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-12">
+			<div class="invoice-title">
+				<h2>Invoice</h2><h3 class="pull-right">Order #{{ subscription_id }}</h3>
+			</div>
+			<small>TRUZIP.COM</small>
+			<hr>
+			<div class="row">
+				<div class="col-xs-6">
+					<address>
+						<strong>Billed To:</strong>
+						<br>
+						{{ firstName }} {{ lastName }}
+						<br>
+						{{ billing_address_line1 }}
+						<br>
+						{{ billing_address_city }}, {{ billing_address_state }} {{ billing_address_zip }}
+					</address>
+				</div>
+				<div class="col-xs-6 text-right">
+					<address>
+						<strong>Order Date:</strong>
+						<br>
+						{{ startDateString }}
+						<br>
+						<br>
+					</address>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-6">
+					<address>
+						<strong>Payment Method:</strong>
+						<br>
+						{{ card_brand }} ending **** {{ card_last4 }}
+						<br>
+						{{ email }}
+					</address>
+				</div>
+				<div class="col-xs-6 text-right">
+					<address>
+						<strong>Current Billing Cycle:</strong>
+						<br>
+						Starting : {{ startingBillingCycle }}
+						<br>
+						Ending : {{ endingBillingCycle }}
+						<br>
+					</address>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-12">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title"><strong>Subscription Summary</strong></h3>
+				</div>
+				<div class="panel-body">
+					<div class="table-responsive">
+						<table class="table table-condensed">
+							<thead>
+								<tr>
+									<td><strong>Subscription</strong></td>
+									<td class="text-center"><strong>Price Per Lead</strong></td>
+									<td class="text-center"><strong>Total Leads</strong></td>
+									<td class="text-right"><strong>Totals</strong></td>
+								</tr>
+							</thead>
+							<tbody>
+								<!-- foreach ($order->lineItems as $line) or some such thing here -->
+								<tr>
+									<td>{{ geo }}</td>
+									<td class="text-center">{{ chargePerLead }}</td>
+									<td class="text-center">{{ numOfLeads }}</td>
+									<td class="text-right">{{ price }}</td>
+								</tr>
+								<tr>
+									<td class="thick-line"></td>
+									<td class="thick-line"></td>
+									<td class="thick-line text-center"><strong>Subtotal</strong></td>
+									<td class="thick-line text-right">{{ price }}</td>
+								</tr>
+								<tr>
+									<td class="no-line"></td>
+									<td class="no-line"></td>
+									<td class="no-line text-center"><strong>Shipping</strong></td>
+									<td class="no-line text-right">N/A</td>
+								</tr>
+								<tr>
+									<td class="no-line"></td>
+									<td class="no-line"></td>
+									<td class="no-line text-center"><strong>Total</strong></td>
+									<td class="no-line text-right">{{ price }}</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<hr>
+		<div class="col-md-12">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title"><strong>Important Information</strong></h3>
+				</div>
+				<div class="panel-body">
+					Your next billing date will be {{ endDateString }}.
+					<br>
+					If you have any questions, please email us at <a id="emailUsLink" href="" data-bypass>info@truzip.com</a>
+					<br>
+					You will be receieving a copy of your invoice to the email provided, you may reply to that email with any questions.
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

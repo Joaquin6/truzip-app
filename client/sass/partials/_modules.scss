@@ -1,0 +1,2584 @@
+// Main navigation links
+// ====================================================================
+.loginbar {
+    margin: 0 20px 0 60px;
+    padding: 0;
+    z-index: 9999;
+    list-style: none;
+
+    @extend %pos-rel;
+
+    li {
+        display: inline;
+        list-style: none;
+        padding-bottom: 15px;
+
+        a {
+            @extend %extend_2;
+
+            &:hover {
+                @extend %extend_2;
+            }
+        }
+
+        &.devider {
+            top: -1px;
+            padding: 0;
+            font-size: 8px;
+
+            @extend %pos-rel;
+
+            margin: 0 6px 0 2px;
+            font-family: $font_tahoma;
+            border-right: solid 1px $color_pink_swan_approx;
+        }
+    }
+
+    i {
+        color: $color_mountain_mist_approx;
+        font-size: 18px;
+        margin-top: 3px;
+        cursor: pointer;
+    }
+}
+
+.navbar {
+    @extend %pos-rel;
+
+    min-height: 50px;
+    margin-bottom: 0;
+    border: 0 solid transparent;
+
+    @include box-shadow(0 3px 4px 0 $black_40);
+
+    &.navbar-absolute-top {
+        @extend %pos-abs;
+
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
+.dropdown-menu {
+    text-align: right;
+    min-width: 180px;
+}
+
+.navbar-nav {
+    margin: 0 -15px;
+
+    .dropdown-menu {
+        left: -140px;
+        font-size: 13px;
+        background-color: $black_70;
+        border: 0 none;
+
+        @include border-radius(0px);
+
+        @include box-shadow(0 6px 12px $black_17_5);
+
+        > li > a {
+            color: $white_70;
+            padding: 7px 20px;
+
+            &:hover {
+                background: $white_10;
+                color: $white;
+            }
+
+            &:focus {
+                background: $white_10;
+                color: $white;
+            }
+        }
+
+        > .active > a {
+            background: none;
+            color: $white;
+
+            &:hover {
+                background: $white_10;
+                color: $white;
+            }
+
+            &:focus {
+                background: none;
+                color: $white;
+            }
+        }
+    }
+
+    .btn {
+        border: 1px solid $white_20;
+        margin-left: 5px;
+        margin-top: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    a.btn {
+        &:focus {
+            border: 1px solid $white_60;
+        }
+
+        &:hover {
+            border: 1px solid $white_60;
+        }
+    }
+
+    > li > a {
+        margin: 5px 0;
+    }
+}
+
+.navbar-collapse {
+    border: 0 none;
+    border-top: 0 none;
+
+    @include box-shadow(none);
+}
+
+.navbar-static-top {
+    @extend %extend_3;
+}
+
+.navbar-fixed-top {
+    @extend %extend_3;
+}
+
+.navbar-fixed-bottom {
+    @extend %extend_3;
+}
+
+.navbar-default {
+    background-color: $color_tuna_approx;
+    padding: 0 10px;
+
+    .navbar-brand {
+        &:hover {
+            color: $color_cod_gray_approx;
+            background-color: transparent;
+        }
+
+        &:focus {
+            color: $color_cod_gray_approx;
+            background-color: transparent;
+        }
+    }
+
+    .navbar-toggle {
+        border: 1px solid $white;
+
+        &:hover {
+            background-color: transparent;
+        }
+
+        &:focus {
+            background-color: transparent;
+        }
+
+        .icon-bar {
+            background-color: $white;
+        }
+    }
+
+    .navbar-nav > li > a {
+        color: $white;
+
+        &:hover {
+            color: $white;
+        }
+    }
+}
+
+.navbar-brand-logo {
+    max-height: 34px;
+    margin-top: 8px;
+}
+
+.navbar-brand {
+    &:hover {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+}
+
+#SidebarSorterOptions {
+    &.nav-tabs > li > a {
+        line-height: 0.428571;
+    }
+
+    &.nav > li > a {
+        padding: 10px 12px 10px 22px;
+    }
+}
+
+#homeBG {
+    background: $image_url_0 no-repeat center center;
+    background-size: cover;
+    height: 600px;
+    overflow-x: hidden;
+
+    @extend %pos-rel;
+}
+
+#agentsBG {
+    background: $image_url_1 no-repeat center center;
+    background-size: cover;
+    height: 300px;
+    overflow-x: hidden;
+
+    @extend %pos-rel;
+}
+
+#home {
+    h1 {
+        padding-top: 100px;
+        color: $black;
+        font-size: 44px;
+        font-family: $font_proxima_nova, $font_sans-serif;
+    }
+
+    p {
+        padding: 10px 20px 20px;
+        color: $white;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 800;
+        text-align: center;
+
+        &.homesearchbutton {
+            padding: 2px 0;
+            color: $white;
+            font-size: 24px;
+            line-height: 10px;
+            font-weight: 600;
+            text-align: center;
+
+            @extend %margin0;
+        }
+    }
+
+    .overlay {
+        min-height: 585px;
+    }
+
+    .div-trans {
+        padding: 12px;
+        background-color: $black_60;
+        min-height: 55px;
+        margin: auto;
+        width: 100%;
+        max-width: 800px;
+        min-width: 260px;
+        color: $black;
+
+        @include border-radius(6px);
+
+        @include background-clip($default-background-clip);
+    }
+
+    .slick-responsive h3 {
+        color: $white;
+        font-family: $font_garamond_premier_pro;
+        font-size: 30px;
+        line-height: 34px;
+        font-style: italic;
+        padding-bottom: 40px;
+    }
+}
+
+.MainHeaderText {
+    color: $black;
+    font-size: 44px;
+    font-family: $font_lanenar;
+    margin-top: 18px;
+
+    @include text-shadow(0 0 25px $white);
+}
+
+.MobileMainHeaderText {
+    color: $black;
+    font-size: 24px;
+    font-family: $font_lanenar;
+    margin: 0 16%;
+}
+
+.MainHeaderTextInfo {
+    color: $black;
+    font-size: 30px;
+    font-family: $font_lanenar;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.MobileMainHeaderTextInfo {
+    color: $black;
+    font-size: 15px;
+    font-family: $font_lanenar;
+    line-height: 19px;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.div-trans {
+    padding: 10px;
+    background-color: $black_60;
+
+    @include border-radius(6px);
+
+    @include background-clip($default-background-clip);
+}
+
+.form-control {
+    background-color: $white;
+    font-size: 18px;
+    height: 46px;
+}
+
+.input-group-addon {
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1;
+    color: $white;
+    text-align: center;
+    background-color: $color_tuna_approx;
+    border: 1px solid $color_tuna_approx;
+
+    @include border-radius(4px);
+}
+
+#about {
+    color: $white;
+    background-color: $black;
+    padding-top: 80px;
+}
+
+.big-icon {
+    font-size: 250px;
+}
+
+.why-div {
+    text-align: justify;
+    padding: 10px 50px;
+}
+
+.summaryBox {
+    padding: 20px;
+}
+
+.carousel-control {
+    &.left {
+        left: 0;
+        right: auto;
+        background-repeat: repeat-x;
+        background-image: linear-gradient(to left, $black_0_01 0, rgba(0, 0, 0, 0) 100%) !important;
+    }
+
+    &.right {
+        right: 0;
+        left: auto;
+        background-repeat: repeat-x;
+        background-image: linear-gradient(to right, $black_0_01 0, rgba(0, 0, 0, 0) 100%) !important;
+    }
+}
+
+.carousel-indicators {
+    li {
+        border: 2px solid $color_forest_green_approx;
+        width: 10px;
+        height: 10px;
+    }
+
+    .active {
+        border: 2px solid $color_forest_green_approx;
+        width: 10px;
+        height: 10px;
+        background: $color_forest_green_approx;
+    }
+}
+
+.donars-section {
+    background: $image_url_2 no-repeat center center;
+    padding: 0;
+    background-size: cover;
+    color: $white;
+
+    .overlay {
+        background: $image_url_overlays_0;
+    }
+
+    h4 {
+        line-height: 40px;
+
+        i {
+            padding: 5px;
+        }
+    }
+}
+
+.slide-custom {
+    min-height: 200px;
+    padding: 100px 20px;
+    line-height: 30px;
+}
+
+.panel-body {
+    &.WelcomeBestDealsCard {
+        padding: 4px;
+
+        @extend %pos-rel;
+    }
+
+    &.ListingsSideBarCard {
+        padding: 6px;
+    }
+}
+
+.WelcomeBestDealsCardoverlay {
+
+    @extend %pos-abs;
+
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $color_gold_10_approx;
+    }
+}
+
+#bestdeals-caption-half-up {
+    @extend %pos-abs;
+
+    top: 100%;
+    left: 0px;
+    border-top: ridge $gray 1px;
+    width: 100%;
+    background-color: $white;
+    opacity: 1;
+    text-align: left;
+
+    @include transform(translateY(100%));
+}
+
+#bestdeals-caption-half-down {
+    @extend %pos-abs;
+
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    background-color: $white;
+    opacity: 1;
+    border-bottom: ridge $gray 1px;
+    text-align: left;
+
+    @include transform(translateY(100%));
+}
+
+#BestDealsBody {
+    height: 30%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: auto;
+}
+
+#howitworks {
+    color: $white;
+    padding: 0;
+
+    @include background-size(cover);
+
+    .overlay {
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+}
+
+.col-lg-offset-1 {
+    margin-left: 6.25%;
+}
+
+.img-thumbnail {
+    @include inline-block;
+
+    max-width: 100%;
+    height: auto;
+    padding: 4px;
+    line-height: 1.42857143;
+    background-color: transparent;
+    border: 1px solid transparent;
+
+    @include border-radius(4px);
+
+    @include single-transition(all 0.2s ease-in-out);
+}
+
+.modal {
+    @extend %pos-abs;
+}
+
+.modal-header {
+    border-bottom: 1px solid $white;
+    padding: 8px;
+    background-color: $white;
+    color: $color_tuna_approx;
+}
+
+.modal-footer {
+    padding: 3px;
+    background-color: $white;
+    color: $color_tuna_approx;
+    text-align: center;
+    border-top: 0 solid $mercury;
+}
+
+.modal-body {
+    padding: 20px;
+    color: $color_tuna_approx;
+    clear: both;
+}
+
+.modal-content {
+    border: 1px $white solid;
+
+    @include border-radius(2px);
+
+    background-color: $white;
+}
+
+#contact {
+    padding-top: 80px;
+    color: $black;
+    background-color: $mercury;
+
+    .form-control {
+        background-color: $white;
+        height: 40px;
+    }
+
+    .div-trans button {
+        background-color: $color_forest_green_approx;
+    }
+}
+
+.form-group {
+    margin-bottom: 5px;
+}
+
+footer {
+    @extend %pos-rel;
+
+    z-index: 1030;
+}
+
+#footser-end {
+    text-align: right;
+    background-color: $color_tuna_approx;
+    color: $white;
+    min-height: 40px;
+    border: 0 solid transparent;
+    padding-top: 10px;
+    bottom: 0;
+    margin-top: 0;
+
+    @include box-shadow(0 -4px 4px 0 $black_40);
+
+    a {
+        color: $white;
+    }
+}
+
+#mobile-footser-end {
+    background-color: $color_mystic_approx;
+    color: $white;
+    padding: 0;
+    bottom: 0;
+    height: 52px;
+    border-top: 1px solid $color_cararra_approx;
+
+    .col-xs-4 {
+        padding-left: 0;
+    }
+
+    .col-xs-8 {
+        padding-left: 0;
+        padding-right: 2px;
+
+        p {
+            @extend %extend_4;
+        }
+    }
+
+    button {
+        padding: 2px 4px;
+        font-weight: bold;
+        width: 90px;
+        height: 50px;
+    }
+
+    span.glyphicon {
+        @extend %extend_4;
+    }
+}
+
+.input-group {
+    span.twitter-typeahead {
+        display: block !important;
+
+        .tt-dropdown-menu {
+            top: 40px !important;
+        }
+    }
+
+    &.input-group-lg span.twitter-typeahead .tt-dropdown-menu {
+        top: 44px !important;
+    }
+
+    &.input-group-sm span.twitter-typeahead .tt-dropdown-menu {
+        top: 28px !important;
+    }
+}
+
+.Shadow {
+    background-color: $white_70;
+}
+
+.ShadowBottom {
+    @extend %pos-abs;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 40px;
+    background-color: $black_50;
+}
+
+.label {
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+
+    @include border-radius(4px);
+
+    @include inline-block;
+}
+
+.label-primary {
+    background-color: $color_jungle_green_approx;
+}
+
+.label-primary[href] {
+    &:hover {
+        background-color: $color_elm_approx;
+    }
+
+    &:focus {
+        background-color: $color_elm_approx;
+    }
+}
+
+.label-grey-100 {
+    background-color: $color_wild_sand_approx;
+    color: $color_star_dust_approx;
+}
+
+.label-grey-100[href] {
+    &:hover {
+        background-color: $color_alto_approx;
+    }
+
+    &:focus {
+        background-color: $color_alto_approx;
+    }
+}
+
+.st-container {
+    height: 100%;
+    padding-top: 50px;
+
+    @extend %pos-rel;
+
+    overflow: hidden;
+
+    .sidebar {
+        position: absolute !important;
+        visibility: hidden;
+        z-index: 100;
+    }
+}
+
+.listings-page-map {
+    width: 100%;
+
+    @extend %pos-abs;
+
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+#Map {
+    @extend %extend_14;
+
+    div#FailedMapLoad.map-load-failed {
+        background-image: $image_url_mapicons_0;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: auto;
+        width: 100%;
+        z-index: 1000;
+    }
+}
+
+.panel-heading {
+    padding: 0;
+}
+
+.ListingsSideBarContainer {
+    float: right;
+    background-color: $white;
+    position: absolute !important;
+    z-index: 100;
+    height: inherit;
+    padding: 0 2px;
+    right: 0;
+
+    @extend %block;
+
+    visibility: visible;
+    overflow-y: hidden;
+    width: 33%;
+    font-size: 10px;
+
+    @include box-shadow((-4px) 0 4px 0 $black_40);
+}
+
+.ListingsSideBarHeader {
+    letter-spacing: normal;
+    padding: 4px 2px 0;
+}
+
+.ListingsMapHeader {
+    color: $black;
+    font-size: 13px;
+    padding: 4px 6px 0 0;
+    float: right;
+    height: 41px;
+    margin-bottom: 6px;
+    width: 100%;
+
+    @include box-shadow(0 4px 4px 0 $black_40);
+}
+
+.MapHeaderTable {
+    float: right;
+    height: inherit;
+    margin: -2px 0;
+}
+
+.Properties-Block {
+    padding: 0 0 15px;
+    border-bottom: 1px solid transparent;
+}
+
+#ListingsProperties {
+    overflow-y: scroll;
+}
+
+.map-overlay {
+    @extend %extend_6;
+}
+
+.navbar-map-overlay {
+    @extend %extend_6;
+
+    background-color: $white_80;
+    z-index: 2;
+}
+
+// ====================================================================
+// SVG Map Icons
+// ====================================================================
+
+[class^="mapicons-"] {
+    @extend %block;
+
+    min-height: 2.5em;
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.mapicons-good-deal {
+    background-image: inline-image("mapicons/good-deal.svg");
+
+    .no-svg & {
+        background-image: image-url("mapicons/good-deal.png");
+    }
+}
+
+.mapicons-fair-deal {
+    background-image: inline-image("mapicons/fair-deal.svg");
+
+    .no-svg & {
+        background-image: image-url("mapicons/fair-deal.png");
+    }
+}
+
+.mapicons-rest-deal {
+    background-image: inline-image("mapicons/rest-deal.svg");
+
+    .no-svg & {
+        background-image: image-url("mapicons/rest-deal.png");
+    }
+}
+
+.mapicons-hover-deal {
+    background-image: inline-image("mapicons/hover-over.svg");
+
+    .no-svg & {
+        background-image: image-url("mapicons/hover-over.png");
+    }
+}
+
+.ir {
+    @include hide-text;
+}
+
+button {
+    &#openLargeImagesBtn {
+        background-color: $color_cod_gray_approx !important;
+        background-repeat: repeat-x;
+        filter: progid:dximagetransform.microsoft.gradient(startcolorstr="$color_fuscous_gray_approx", endcolorstr="$color_cod_gray_approx");
+        background-image: linear-gradient($color_fuscous_gray_approx, $color_cod_gray_approx);
+        border-color: $color_cod_gray_approx $color_cod_gray_approx hsl(14, 4%, -3%);
+        color: $white !important;
+
+        @include text-shadow(0 -1px 0 $black_46);
+    }
+
+    &#ListingsSearchOptions {
+        margin: 0 10px 0 0;
+        width: 100px;
+    }
+}
+
+.media {
+    margin-top: 0;
+    margin-bottom: 0;
+    zoom: 1;
+    overflow: hidden;
+
+    > {
+        .pull-left {
+            margin-right: 0;
+            padding-right: 10px;
+        }
+
+        .pull-right {
+            margin-left: 15px;
+        }
+    }
+}
+
+.media-body {
+    zoom: 1;
+    overflow: hidden;
+    width: 10000px;
+    display: table-cell;
+    vertical-align: top;
+}
+
+.media-object {
+    @extend %block;
+}
+
+.media-left {
+    padding-right: 10px;
+    display: table-cell;
+    vertical-align: top;
+}
+
+.media-right {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.media-middle {
+    vertical-align: middle;
+}
+
+.media-bottom {
+    vertical-align: bottom;
+}
+
+.media-heading {
+    margin-top: 0;
+    margin-bottom: 5px;
+    margin-bottom: 10px;
+
+    > a {
+        color: $color_chicago_approx;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.media-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.thumbnail {
+    @extend %pos-rel;
+
+    overflow: hidden;
+    padding: 0;
+    border: 1px solid red;
+
+    @include border-radius(0px);
+
+    .caption {
+        padding: 9px;
+        color: $black;
+    }
+}
+
+#caption-half-down {
+    @extend %pos-abs;
+
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    background-color: $white;
+    opacity: 0.8;
+    border-bottom: ridge $gray 1px;
+    text-align: left;
+
+    @include transform(translateY(100%));
+
+    h1 {
+        color: $black;
+    }
+
+    h2 {
+        color: $black;
+    }
+
+    h3 {
+        color: $black;
+    }
+
+    h4 {
+        color: $black;
+    }
+
+    h5 {
+        color: $black;
+    }
+
+    h6 {
+        color: $black;
+    }
+
+    p {
+        color: $black;
+    }
+}
+
+#caption-half-up {
+    @extend %pos-abs;
+
+    top: 100%;
+    left: 0px;
+    border-top: ridge $gray 1px;
+    width: 100%;
+    background-color: $white;
+    opacity: 0.8;
+    text-align: left;
+
+    @include transform(translateY(100%));
+
+    h1 {
+        color: $black;
+        margin-top: 5%;
+    }
+
+    h2 {
+        color: $black;
+        margin-top: 5%;
+    }
+
+    h3 {
+        color: $black;
+        margin-top: 5%;
+    }
+
+    h4 {
+        color: $black;
+        margin-top: 5%;
+    }
+
+    h5 {
+        color: $black;
+        margin-top: 5%;
+    }
+
+    h6 {
+        color: $black;
+        margin-top: 5%;
+    }
+
+    p {
+        color: $black;
+        margin-top: 5%;
+    }
+}
+
+.ListingsSideBarOverlay {
+    width: 100%;
+    background-color: $white_80;
+    padding: 6px 15px 6px 4px;
+    clear: both;
+    z-index: 1000;
+
+    @extend %pos-abs;
+
+    top: 0;
+}
+
+.ListingsSideBarOverlayBottom {
+    width: 100%;
+    background-color: $white_80;
+    padding: 6px 15px 6px 4px;
+    clear: both;
+    z-index: 1000;
+
+    @extend %pos-abs;
+
+    bottom: 0;
+}
+
+.margin-v-0-10 {
+    margin-top: 0 !important;
+    margin-bottom: 10px !important;
+}
+
+.panel {
+    border-left: none;
+    border-right: none;
+
+    @extend %margin0;
+
+    @include border-radius(0px);
+
+    @include box-shadow(none);
+
+    border: 1px solid $white;
+}
+
+.text-primary {
+    color: $color_jungle_green_approx;
+}
+
+.text-info {
+    color: $color_calypso_approx;
+}
+
+.text-grey-400 {
+    color: $color_silver_approx;
+}
+
+.list-group {
+    margin-bottom: 20px;
+    padding-left: 0;
+}
+
+.list-group-item {
+    @extend %pos-rel;
+
+    @extend %block;
+
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: $white;
+    border: 1px solid $color_mercury_approx;
+
+    &:first-child {
+        @extend %round-tr;
+
+        @extend %round-tl;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+
+        @extend %round-br;
+
+        @extend %round-bl;
+    }
+
+    &.disabled {
+        @extend %extend_8;
+
+        &:hover {
+            @extend %extend_8;
+
+            .list-group-item-heading {
+                color: inherit;
+            }
+
+            .list-group-item-text {
+                color: $color_tapa_approx;
+            }
+        }
+
+        &:focus {
+            @extend %extend_8;
+
+            .list-group-item-heading {
+                color: inherit;
+            }
+
+            .list-group-item-text {
+                color: $color_tapa_approx;
+            }
+        }
+
+        .list-group-item-heading {
+            color: inherit;
+        }
+
+        .list-group-item-text {
+            color: $color_tapa_approx;
+        }
+    }
+
+    &.active {
+        @extend %extend_9;
+
+        &:hover {
+            @extend %extend_9;
+
+            .list-group-item-heading {
+                color: inherit;
+
+                > small {
+                    color: inherit;
+                }
+
+                > .small {
+                    color: inherit;
+                }
+            }
+
+            .list-group-item-text {
+                color: $color_ice_cold_approx;
+            }
+        }
+
+        &:focus {
+            @extend %extend_9;
+
+            .list-group-item-heading {
+                color: inherit;
+
+                > small {
+                    color: inherit;
+                }
+
+                > .small {
+                    color: inherit;
+                }
+            }
+
+            .list-group-item-text {
+                color: $color_ice_cold_approx;
+            }
+        }
+
+        .list-group-item-heading {
+            color: inherit;
+
+            > small {
+                color: inherit;
+            }
+
+            > .small {
+                color: inherit;
+            }
+        }
+
+        .list-group-item-text {
+            color: $color_ice_cold_approx;
+        }
+    }
+}
+
+.list-group-item-success {
+    color: $color_chelsea_cucumber_approx;
+    background-color: $color_sprout_approx;
+}
+
+.list-group-item-info {
+    color: $color_calypso_approx;
+    background-color: $color_link_water_approx;
+}
+
+.list-group-item-warning {
+    color: $color_driftwood_approx;
+    background-color: $color_driftwood_approx;
+}
+
+.list-group-item-danger {
+    color: $color_well_read_approx;
+    background-color: $color_roof_terracotta_approx;
+}
+
+.list-group-item-heading {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.list-group-item-text {
+    margin-bottom: 0;
+    line-height: 1.3;
+}
+
+.BestDealIcon {
+    background: $image_url_3 no-repeat center center;
+    height: 32px;
+    width: 32px;
+    float: left;
+    margin-top: -5px;
+}
+
+.GoodDealIcon {
+    background: $image_url_mapicons_1 no-repeat center center;
+    height: 32px;
+    width: 32px;
+    float: left;
+    margin-top: -5px;
+    margin-right: -25px;
+}
+
+.FairDealIcon {
+    background: $image_url_mapicons_2 no-repeat center center;
+    height: 32px;
+    width: 32px;
+    float: left;
+    margin-top: -5px;
+    margin-right: -25px;
+}
+
+.RestDealIcon {
+    background: $image_url_mapicons_3 no-repeat center center;
+    height: 32px;
+    width: 32px;
+    float: left;
+    margin-top: -5px;
+    margin-right: -25px;
+}
+
+.ListingsSideBarMid {
+    display: none;
+}
+
+.ListingsSideBarSmall {
+    display: none;
+}
+
+#PropertyDetailsMap {
+    @extend %extend_14;
+}
+
+.ListingsPropertyDetailsContainer {
+    padding: 5px 10px 10px;
+    border-right: 1px solid $color_wafer_approx;
+    background-color: $color_alto_approx;
+    margin-top: 0;
+    z-index: 1000;
+
+    @extend %pos-abs;
+
+    right: 320px;
+    visibility: hidden;
+    height: inherit;
+    overflow-y: hidden;
+
+    @include box-shadow((-4px) 0 4px 0 $black_40);
+
+    @include single-transition(width 2s linear 5s);
+}
+
+.ListingsPropertyDetailsMainHeader {
+    background-color: $white;
+    border: 2px solid $color_japanese_laurel_approx;
+    color: $color_japanese_laurel_approx;
+    font-size: 14px;
+    padding: 5px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.ListingsPropertyDetailsHeader {
+    background-color: $black_10;
+    color: $black;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.ListingsPropertyDetailsAgentHeader {
+    background-color: $color_snowy_mint_approx;
+    color: $black;
+    font-size: 12px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    .Value {
+        font-size: 14px;
+        font-weight: bold;
+        margin-left: 6px;
+    }
+}
+
+.PropertyDetailsHeaderCashBack {
+    margin-top: 12px;
+    margin-left: 10px;
+    float: left;
+    font-size: 14px;
+}
+
+.ListingsPropertyDetailsValue {
+    font-size: 13px;
+    margin-left: 10px;
+    font-weight: 800;
+    font-family: $font_proxima_nova, $font_sans-serif;
+}
+
+.ListingsPropertySideDetailsValue {
+    font-size: 11px;
+    margin-left: 10px;
+    font-weight: 800;
+    font-family: $font_proxima_nova, $font_sans-serif;
+}
+
+.ListingsPropertyDetailsTabContent {
+    padding: 10px;
+    background-color: $white;
+    border: 1px solid $color_alto_approx;
+    border-top: 1px solid $white;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.DetailsDataTable {
+    color: $black_80;
+    padding: 0 4px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.DetailsDataTableValue {
+    color: $black;
+    padding: 0 4px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 800;
+    font-family: $font_proxima_nova, $font_sans-serif;
+}
+
+.GridTextLeft {
+    text-align: left;
+    font-size: 11px;
+}
+
+.GridAlterBg {
+    background-color: $concrete;
+}
+
+.ColumnLine {
+    border-right: 1px solid $color_alto_approx;
+}
+
+.IndexBest {
+    background-color: $color_japanese_laurel_approx;
+}
+
+.IndexGood {
+    background-color: $orange;
+}
+
+.IndexRest {
+    background-color: $red;
+}
+
+.ListingsComparableCard {
+    background-color: $concrete;
+    margin-bottom: 10px;
+
+    .Value {
+        font-size: 14px;
+        font-weight: bold;
+        margin-left: 6px;
+        font-weight: 800;
+        font-family: $font_proxima_nova, $font_sans-serif;
+        color: $black_80;
+    }
+}
+
+.ListingsComparableData {
+    padding: 10px;
+    float: right;
+    line-height: 24px;
+}
+
+.SearchOptionsContainer {
+    @extend %pos-abs;
+
+    left: 10px;
+    top: 70px;
+    z-index: 300;
+    line-height: 26px;
+    display: none;
+    height: 300px;
+}
+
+.mapLagend {
+    @extend %pos-abs;
+
+    left: 50px;
+    top: 90px;
+    z-index: 1;
+}
+
+.leaflet-top {
+    z-index: 200;
+}
+
+.leaflet-bottom {
+    z-index: 200;
+}
+
+.FilterBarLabel {
+    font-size: 14px;
+    font-weight: normal;
+    padding: 0 5px;
+    margin-right: 10px;
+}
+
+.FilterBarValuesClose {
+    border-right: 1px solid $color_alto_approx;
+    vertical-align: middle;
+}
+
+.FilterBarValues {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 5px;
+    height: inherit;
+    text-align: center;
+
+    @extend %margin0;
+
+    border-right: 1px solid $color_alto_approx;
+    vertical-align: middle;
+}
+
+.FilterBarValuesParent {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 5px;
+    text-align: center;
+    margin: 0 10px 0 2px;
+    height: 40px;
+    line-height: 1.5;
+}
+
+.TableAlterSelected {
+    background-color: $color_tahuna_sands_approx;
+}
+
+.TableSelected {
+    background-color: $color_cumulus_approx;
+}
+
+#SidebarPropertyListingsTitle {
+    text-align: center;
+
+    &.well.well-sm {
+        padding: 4px 6px;
+        margin-bottom: 0;
+    }
+}
+
+label {
+    &.valid {
+        width: 24px;
+        height: 24px;
+        background: $image_url_4 center center no-repeat;
+
+        @include inline-block;
+
+        text-indent: -9999px;
+    }
+
+    &.error {
+        font-weight: bold;
+        color: $red;
+        padding: 2px 8px;
+        margin-top: 2px;
+    }
+}
+
+@font-face {
+    font-family: $font_picto_foundry_household;
+    src: $font_url_picto_foundry_0;
+    src: $font_url_picto_foundry_1 format("embedded-opentype"), $font_url_picto_foundry_2 format("woff"), $font_url_picto_foundry_3 format("truetype"), $font_url_picto_foundry_4 format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.btn-block {
+    @extend %block;
+
+    width: auto;
+}
+
+@font-face {
+    font-family: $font_picto_foundry_general;
+    src: $font_url_picto_foundry_5;
+    src: $font_url_picto_foundry_6 format("embedded-opentype"), $font_url_picto_foundry_7 format("woff"), $font_url_picto_foundry_8 format("truetype"), $font_url_picto_foundry_9 format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.ListingsSideBarCardBorder {
+    border: 1px $gray solid;
+
+    @extend %pos-abs;
+
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.ListingsSideBarCardoverlay {
+    background-color: rgba(255, 255, 255, 0);
+
+    @extend %pos-abs;
+
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $color_gold_10_approx;
+    }
+}
+
+.ListingsSideBarCardoverlayActive {
+    background-color: $color_gold_30_approx;
+
+    @extend %pos-abs;
+
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+#ListingsFindDealsButton {
+    padding: 6px;
+}
+
+.MarketAverageGraph {
+    background-position: 0 0;
+    background-image: $image_url_5;
+    background-repeat: repeat-x;
+    width: 350px;
+    height: 104px;
+    margin-top: 50px;
+}
+
+.MarketMarker {
+    background-position: -370px 0;
+    background-image: $image_url_5;
+    background-repeat: repeat-x;
+    width: 125px;
+    height: 126px;
+    padding: 26px 6px 2px;
+    font-size: 12px;
+    text-align: center;
+    float: left;
+    font-weight: bold;
+    margin-top: -50px;
+}
+
+.MarketMarkerGood {
+    color: $color_japanese_laurel_approx;
+    margin-left: 20px;
+}
+
+.MarketMarkerFair {
+    color: $blue;
+    margin-left: 115px;
+}
+
+.MarketMarkerAbove {
+    color: $red;
+    margin-left: 210px;
+}
+
+.MarketGoodMarker {
+    padding: 2px 6px;
+    font-weight: bold;
+    color: $color_japanese_laurel_approx;
+    border: 1px solid $color_japanese_laurel_approx;
+    font-size: 12px;
+    text-align: center;
+    float: right;
+}
+
+.MarketBadMarker {
+    padding: 2px 6px;
+    font-weight: bold;
+    color: $red;
+    border: 1px solid $red;
+    font-size: 12px;
+    text-align: center;
+    float: left;
+}
+
+.leaflet-popup-content-wrapper {
+    @include border-radius(5px);
+}
+
+.mobilehomesearch {
+    background: $image_url_6 no-repeat center center;
+    background-size: cover;
+    height: 250px;
+    padding-top: 48px;
+}
+
+.ui-body-a {
+    border-color: $color_gray_approx;
+}
+
+html {
+    .ui-panel-page-container-a {
+        border-color: $color_gray_approx;
+    }
+
+    .ui-bar-a .ui-body-inherit {
+        border-color: $color_gray_approx;
+    }
+
+    .ui-body-a .ui-body-inherit {
+        border-color: $color_gray_approx;
+    }
+
+    body .ui-group-theme-a .ui-body-inherit {
+        border-color: $color_gray_approx;
+    }
+}
+
+.ui-input-text {
+    @extend %extend_17;
+}
+
+.ui-input-search {
+    @extend %extend_17;
+}
+
+.ui-header-fullscreen {
+    opacity: 1;
+}
+
+.ui-footer-fullscreen {
+    opacity: 1;
+}
+
+.realtorFeeBox {
+    background-color: $color_cerulean_approx;
+    padding: 40px;
+    margin-top: 100px;
+
+    @include border-radius(4px);
+}
+
+.realtorFeeBoxLeft {
+    background-color: $white;
+    padding: 40px;
+    float: left;
+    width: 440px;
+    margin-right: 40px;
+
+    @include border-radius(4px);
+}
+
+.realtorFeeBoxRight {
+    margin-top: 70px;
+}
+
+.input-number {
+    height: 34px;
+}
+
+.invoice-title {
+    h2 {
+        @include inline-block;
+    }
+
+    h3 {
+        @include inline-block;
+    }
+}
+
+.table {
+    > tbody > tr > {
+        .no-line {
+            border-top: none;
+        }
+
+        .thick-line {
+            border-top: 2px solid;
+        }
+    }
+
+    > thead > tr > .no-line {
+        border-bottom: none;
+    }
+}
+
+.welcomeToTruzipTitle {
+    font-size: 40px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+    .list_carousel {
+        .list_carousel-prev {
+            background-image: $image_url_arrows_1;
+        }
+
+        .list_carousel-next {
+            background-image: $image_url_arrows_3;
+        }
+
+        .bedrooms .inner {
+            background-image: $image_url_icons_3;
+        }
+
+        .bathrooms .inner {
+            background-image: $image_url_icons_4;
+        }
+    }
+}
+
+@media (min-width: 320px) {
+    .sidebar-size-30pc {
+        width: 30%;
+    }
+
+    .thumbnail {
+        margin-bottom: 0;
+    }
+
+    .st-container .sidebar.sidebar-visible-desktop {
+        visibility: visible;
+    }
+
+    .show-sidebar .sidebar.sidebar-visible-desktop {
+        display: block;
+    }
+
+    nav#HomeNav .navbar-header {
+        float: none;
+    }
+
+    .navbar-fixed-bottom .navbar-collapse {
+        padding-right: 25px;
+    }
+
+    .navbar-fixed-top .navbar-collapse {
+        padding-right: 25px;
+    }
+
+    .navbar-static-top .navbar-collapse {
+        padding-right: 25px;
+    }
+}
+
+@media (max-width: 375px) {
+    .welcomeToTruzipTitle {
+        font-size: 30px;
+    }
+
+    .welcomeToTruzipSubtitle {
+        font-size: 22px;
+    }
+
+    .modal-body {
+        padding: 0;
+    }
+}
+
+@media (max-width: 479px) {
+    .ListingsMapHeader {
+        display: none;
+    }
+
+    .media-clearfix-xs > [class*="media"] .media-object {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .leaflet-top .leaflet-control {
+        margin-top: 6px;
+    }
+
+    #home p.homesearchbutton {
+        display: none;
+    }
+
+    button#search span.glyphicon-search {
+        display: block;
+        padding: 3px 0;
+    }
+}
+
+@media (min-width: 480px) {
+    button#search span.glyphicon-search {
+        display: none;
+    }
+}
+
+@media (min-width: 540px) {}
+
+@media (min-width: 600px) {
+    .ListingsSideBarContainer {}
+
+    .caption {
+        display: block;
+    }
+}
+
+@media (min-width: 640px) {
+    .thumbnail {
+        margin-bottom: 0;
+    }
+
+    .st-container .sidebar.sidebar-visible-desktop {
+        visibility: visible;
+        display: block;
+    }
+}
+
+@media (max-width: 700px) {
+    .MainHeaderText {
+        font-size: 30px;
+    }
+
+    .MainHeaderTextInfo {
+        font-size: 16px;
+    }
+
+    h5 {
+        font-size: 80px;
+    }
+}
+
+@media (min-width: 720px) {
+    .st-container .sidebar.sidebar-visible-desktop:after {
+        display: none;
+    }
+}
+
+@media (min-width: 750px) {}
+
+@media (min-width: 768px) {
+    %extend_18_media {
+        float: none !important;
+        text-align: center;
+        margin-bottom: 15px;
+        margin-left: 0;
+        margin-right: 0;
+        display: block;
+        height: auto !important;
+        padding: 0 !important;
+    }
+
+    .media-clearfix-sm {
+        > {
+            .pull-left {
+                @extend %extend_18_media;
+            }
+
+            .pull-right {
+                @extend %extend_18_media;
+            }
+
+            .media-left {
+                @extend %extend_18_media;
+            }
+
+            .media-right {
+                @extend %extend_18_media;
+            }
+
+            .media-body {
+                width: auto;
+                display: block;
+            }
+        }
+
+        > [class*="media"] .media-object {
+            width: 100% !important;
+            height: auto !important;
+            min-height: 250px;
+            max-height: 255px;
+        }
+    }
+
+    .thumbnail {
+        margin-bottom: 0;
+    }
+
+    .sidebar.right.sidebar-offset-0 {
+        right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    %extend_19_media {
+        margin-bottom: 0;
+        float: none !important;
+        text-align: center;
+        margin-bottom: 15px;
+        margin-left: 0;
+        margin-right: 0;
+        display: block;
+        height: auto !important;
+        padding: 0 !important;
+    }
+
+    .category {
+        display: none;
+    }
+
+    .media-body {
+        display: none;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    #map-navbar {
+        width: 108%;
+    }
+
+    .panel-body {
+        padding: 8px;
+
+        &.ListingsSideBarCard {
+            padding: 0;
+        }
+    }
+
+    .media-clearfix-xs {
+        > {
+            .pull-left {
+                @extend %extend_19_media;
+            }
+
+            .pull-right {
+                @extend %extend_19_media;
+            }
+
+            .media-left {
+                @extend %extend_19_media;
+            }
+
+            .media-right {
+                @extend %extend_19_media;
+            }
+
+            .media-body {
+                width: auto;
+                display: block;
+            }
+        }
+
+        > [class*="media"] .media-object {
+            width: 100% !important;
+            height: auto !important;
+        }
+    }
+
+    .loginbar {
+        margin: 0 20px 0 -20px;
+    }
+
+    .show-sidebar .sidebar.sidebar-visible-desktop {
+        margin-top: 31px;
+    }
+
+    #findDealsHeader.input-group {
+        width: 145px;
+        margin-bottom: 10px;
+    }
+
+    .top-widget .social-icons {
+        margin-right: 70px;
+    }
+
+    .navbar-collapse ul .btn {
+        max-width: 50%;
+        margin: 0 auto;
+    }
+
+    span.twitter-typeahead {
+        width: 100%;
+        float: right;
+    }
+
+    div#findDealsHeader {
+        width: 244px;
+    }
+
+    button#ListingsSearchOptions {
+        margin: 0 -99px 4px 0;
+    }
+}
+
+@media (min-width: 800px) {
+    .ListingsPropertyDetailsContainer {
+        width: 500px;
+    }
+
+    .ListingsSideBarContainer {
+        font-size: 10px;
+    }
+
+    .ListingsPropertySideDetailsValue {
+        font-size: 11px;
+    }
+
+    .captionOne {
+        display: block;
+    }
+
+    .captionTwo {
+        float: right;
+    }
+}
+
+@media (max-width: 800px) {
+    .MainHeaderText {
+        font-size: 38px;
+    }
+
+    .MainHeaderTextInfo {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 890px) {
+    .label-grey-100 {
+        display: none;
+    }
+}
+
+@media (min-width: 991px) {
+    .panel-title {
+        font-size: 15px;
+    }
+
+    .panel-title-agentCheckout {
+        font-size: 24px;
+    }
+
+    .thumbnail {
+        margin-bottom: 0;
+    }
+
+    #PropertyImgLeft.col-md-6 {
+        text-align: left;
+        padding-right: 0;
+        float: left;
+        margin-right: -20px;
+    }
+
+    #PropertyImgRight.col-md-6 {
+        text-align: right;
+        padding-left: 0;
+        float: right;
+        margin-left: -20px;
+    }
+
+    button#ButtonWithEnvelopIcon {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .ListingsSideBarHeader {
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    #emailListedDeals.input-group {
+        margin-bottom: 10px;
+    }
+
+    #findDealsHeader.input-group {
+        width: 150px;
+        margin-bottom: 10px;
+    }
+
+    .panel-body.ListingsSideBarCard {
+        padding: 6px 6px 0 6px;
+    }
+}
+
+@media (max-width: 991px) {
+    .text-primary {
+        display: block;
+    }
+
+    #MapHeaderCityName.text-primary {
+        display: block;
+    }
+
+    .media-clearfix-sm > .media-body {
+        display: block;
+    }
+
+    button#ButtonWithEnvelopIcon {
+        display: block;
+    }
+}
+
+@media (min-width: 1024px) {}
+
+@media (max-width: 1024px) {
+    .ListingsPropertyDetailsMainHeader {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .Shadow {
+        background-color: $white_60;
+    }
+
+    .form-control {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 991px) and (max-width: 1200px) {
+    .col-md-6 {
+        padding-right: 2px;
+    }
+
+    .thumbnail {
+        margin-bottom: 0;
+    }
+
+    .ListingsSideBarHeader {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .text-primary {
+        font-size: 14px;
+        padding: 4px 0;
+    }
+
+    #MapHeaderCityName.text-primary {
+        font-size: 15px;
+        padding: 4px 2px;
+    }
+
+    #emailListedDeals.input-group {
+        margin-bottom: 10px;
+    }
+
+    #findDealsHeader.input-group {
+        width: 155px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .sidebar-size-lg-4 {
+        width: 360px;
+    }
+
+    .ListingsSideBarHeader {
+        color: $color_jungle_green_approx;
+        font-weight: 500;
+    }
+
+    .text-primary {
+        font-size: 16px;
+        padding: 4px 0;
+    }
+
+    .ListingsSideBarContainer {
+        font-size: 14px;
+        width: 30%;
+        max-width: 400px;
+    }
+
+    .ListingsPropertySideDetailsValue {
+        font-size: 16px;
+    }
+
+    #MapHeaderCityName.text-primary {
+        font-size: 16px;
+        padding: 4px 0;
+    }
+
+    #emailListedDeals.input-group {
+        margin-bottom: 10px;
+    }
+
+    #findDealsHeader.input-group {
+        width: 160px;
+        margin-bottom: 10px;
+    }
+
+    .panel-body.ListingsSideBarCard {
+        font-size: 12px;
+        cursor: grab;
+    }
+}
+
+@media (min-width: 1345px) {}
+
+@media (min-width: 1365px) {
+    .panel-body.ListingsSideBarCard {
+        font-size: 14px;
+        cursor: grab;
+
+        &:hover {
+            cursor: grab;
+        }
+    }
+}
+
+@media (min-width: 1440px) {}
+
+@media (min-width: 1536px) {}
+
+@media (min-width: 1538px) {}
+
+@media (min-width: 1600px) {}
+
+.caption {
+    display: none;
+}
+
+.whyLinks {
+    display: none;
+}
+
+.captionOne {
+    display: none;
+}
+
+.captionTwo {
+    float: left;
+}
+
+@media (min-width: 590px) {
+    .whyLinks {
+        display: block;
+    }
+}
+
+@media (min-width: 900px) {
+    .ListingsSideBarContainer {
+        font-size: 11px;
+    }
+
+    .ListingsPropertySideDetailsValue {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .ListingsSideBarContainer {
+        font-size: 12px;
+    }
+
+    .ListingsPropertySideDetailsValue {
+        font-size: 14px;
+    }
+}
+
+.navbar-header {
+    float: left;
+}
+
+.leaflet-control-layers-group-name {
+    font-size: 12px;
+}
+
+.leaflet-container {
+    font-size: 14px;
+    font-family: $font_proxima_nova, $font_sans-serif;
+}
+
+.leaflet-control-layers-expanded {
+    background-color: $black;
+    color: $white;
+    padding: 6px;
+}
+
+.TooManyMessage {
+    @include border-radius(4px);
+
+    background-color: $black;
+    color: $white;
+    padding: 10px;
+
+    @extend %pos-abs;
+
+    top: 60px;
+    left: 250px;
+    display: none;
+}
+
+.glyphicon {
+    color: $black;
+}
+
+.close {
+    opacity: 0.6;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: $color_nobel_approx;
+    border-bottom: 2px $color_nobel_approx solid;
+    margin: 4px 10px 0;
+    padding-bottom: 4px;
+}
+
+#HomePageSearchForm.navbar-form {
+    display: none;
+    max-width: 420px;
+    padding: 0;
+}
+
+input#NavbarForm.form-control {
+    background-color: $color_tuna_approx;
+    border: 1px solid $color_tuna_approx;
+    font-size: 18px;
+    height: 32px;
+    color: $color_gallery_approx;
+}
+
+#todaysdeals.container {
+    height: 40%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: auto;
+}
+
+#WelcomeBestDealItem.panel-default {
+    background-color: $white;
+}
+
+#WelcomeBestDealsBedrooms.bedroomsInner {
+    background-image: $image_url_icons_0;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 21px 12px;
+    color: $color_mine_shaft_approx;
+    padding: 0 10px 0 25px;
+}
+
+#WelcomeBestDealsBathrooms.bathroomsInner {
+    float: right;
+    background-image: $image_url_icons_1;
+    background-position: left center;
+    background-repeat: no-repeat;
+    color: $color_mine_shaft_approx;
+    padding: 0 0 0 20px;
+}
+
+span.twitter-typeahead {
+    width: 100%;
+
+    .tt-dropdown-menu {
+        @extend %pos-abs;
+
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+        display: none;
+        float: left;
+        min-width: 160px;
+        width: 100%;
+        padding: 5px 0;
+        margin: 2px 0 0;
+        list-style: none;
+        font-size: 14px;
+        text-align: left;
+        background-color: $black_65;
+        border: 1px solid $color_celeste_approx;
+        border: 1px solid $black_15;
+
+        @include border-radius(4px);
+
+        @include box-shadow(0 6px 12px $black_17_5);
+
+        @include background-clip($default-background-clip);
+
+        min-height: 50px;
+        max-height: 200px;
+        overflow: hidden;
+    }
+
+    .tt-suggestion {
+        > p {
+            @extend %block;
+
+            padding: 3px 20px;
+            margin-bottom: 0;
+            clear: both;
+            font-weight: normal;
+            line-height: 1.42857143;
+            color: $white;
+            white-space: nowrap;
+
+            &:hover {
+                @extend %extend_5;
+            }
+
+            &:focus {
+                @extend %extend_5;
+            }
+        }
+
+        &.tt-cursor {
+            color: $white;
+            background-color: $color_boston_blue_approx;
+        }
+    }
+}
+
+.sidebar.sidebar-skin-white {
+    background: $white;
+
+    &.right {
+        border-left: 1px solid $color_cararra_approx;
+    }
+}
+
+.panel-default > .panel-heading {
+    color: $color_mine_shaft_approx;
+    background-color: $white;
+    border-color: $white;
+}
+
+#SorterToggle.glyphicon {
+    top: 6px;
+}
+
+.ListingsSideBarCard .Value {
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 6px;
+    font-weight: 800;
+    font-family: $font_proxima_nova, $font_sans-serif;
+}
+
+#PropertyImgLeft .col-md-6 {
+    text-align: left;
+}
+
+#PropertyImgRight .col-md-6 {
+    text-align: right;
+}
+
+#ListingsSideBarRepeater .panel .panel-body > *:last-child {
+    margin-bottom: 0;
+}
+
+#ListingPropertyItem .panel-default {
+    background-color: $white;
+    border-color: $color_cararra_approx;
+}
+
+div#ListingPropertyItem.panel.panel-primary {
+    background-color: $black;
+}
+
+#propertiesInputEmail.form-control {
+    height: 34px;
+}
+
+.nav-tabs > li {
+    margin-bottom: -3px;
+}
+
+.nav > li > a {
+    padding: 10px 12px;
+}
+
+#emailListedDeals.input-group {
+    width: 100%;
+}
+
+#PropertyTab > a {
+    padding: 8px 10px;
+}
+
+.row.popup-content {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.ui-page-theme-a .ui-body-inherit {
+    border-color: $color_gray_approx;
+}
+
+li.SidebarSortingTab {
+    margin-bottom: -3px;
+    font-size: medium;
+    margin-left: -4px;
+}
+
+.modal-backdrop.in {
+    filter: alpha(opacity = 20);
+    opacity: .2;
+}

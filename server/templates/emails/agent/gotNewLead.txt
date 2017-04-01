@@ -1,0 +1,14 @@
+Hi, {{ agentName }}!
+
+Here is a new lead for you!
+===========================================================================
+Buyers Email: {{ email }}. City of Interest: {{ city }}.
+===========================================================================
+{[ if (leadsLeft) { ]}
+    According to your subscription, we must provide you with {{ leadsLeft }}
+    more Leads by the end of your current billing cycle.
+    ===========================================================================
+{[ } ]}
+If you have any questions, please email us at info@truzip.com.
+===========================================================================
+Truzip.com

@@ -1,0 +1,37 @@
+Hi, {{ agentName }}!
+
+{[ if (newUser) { ]}
+	Here is a new lead for you!
+	In addition, the user is very interested in selling a property with Truzip.
+
+	Below are your lead details:
+{[ } else { ]}
+	Below are your lead details:
+{[ } ]}
+===========================================================================
+Email address of your lead: {{ email }}.
+Search Area: {{ city }}.
+Message:
+{{ message }}
+===========================================================================
+The consumer is very interested in selling a property with Truzip.
+We suggest emailing the user and introducing yourself.
+Provide some "hooks" into why (s)he should sell with you as opposed to other agents.
+{[ if (newUser) { ]}
+	===========================================================================
+	Immediate responses are 500% more effective.
+	===========================================================================
+{[ } else { ]}
+	===========================================================================
+	It would be good to reaffirm the above in your response.
+	Mention you are a Truzip premier agent.
+	Immediate responses are 500% more effective.
+	===========================================================================
+{[ } ]}
+We will continue to send you emails as the consumer interacts further.
+===========================================================================
+If you have any questions, please email us at info@truzip.com.
+===========================================================================
+
+Best,
+Truzip Team
